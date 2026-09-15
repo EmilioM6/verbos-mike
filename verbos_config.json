@@ -1,0 +1,11 @@
+{
+    "ar": {
+        "verbos":["caminar"]
+    },
+    "er": {
+        "verbos":["ser"]
+    },
+    "ir": {
+        "verbos":["abrir"]
+    }
+}

@@ -1,0 +1,1 @@
+const verbos = document.getElementsByClassName()
