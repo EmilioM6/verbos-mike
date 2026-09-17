@@ -13,10 +13,12 @@ async function createVerbos(){
     const config = await loadJSON("verbos_config");
     
     const verbos = document.getElementById("verbos");
+    if (!verbos) return;
 
     // handle each ending
     const endings = config.terminaciones;
     const newDiv = document.createElement("div");
+    newDiv.classList.add("verb-list");
 
     for (const ending in endings) {
         const newHeader = document.createElement("h2");
@@ -26,15 +28,13 @@ async function createVerbos(){
         // each verb selected for the ending
         for (const verbo of endings[ending]) {
             const newA = document.createElement("a");
+            newA.classList.add("verb-link");
 
             newA.href = `conjugaciones.html?verbo=${verbo}`;
             newA.textContent = verbo;
             newA.style.display = "inline-block";
 
-            const lineBreak = document.createElement("br");
-
             newDiv.appendChild(newA);
-            newDiv.appendChild(lineBreak);
         }
     }
     verbos.appendChild(newDiv);
@@ -50,9 +50,14 @@ const pronombres = [
   ["3p", "Ellos/Ellas"]
 ]
 
-function createTable(verbo_data) {
+function createTable(verbo_data, titulo) {
   const newTable = document.createElement("table");
   newTable.classList.add("conjugation-table");
+  
+  const caption = document.createElement("caption");
+  caption.textContent = titulo;
+  newTable.appendChild(caption);
+
   for (const tuple of pronombres) {
       const key = tuple[0];
       const pronombre = tuple[1];
@@ -82,13 +87,11 @@ function conjugateGroup(conjugation_type, type_data, required_conjugations) {
   const conjugaciones = document.getElementById("conjugaciones");
 
   const typeHeader = document.createElement("h2");
+  typeHeader.classList.add("group-title");
   typeHeader.textContent = conjugation_type
   conjugaciones.appendChild(typeHeader);
 
   for (const conjugacion of required_conjugations) {
-      const ConjugacionHeader = document.createElement("h3");
-      ConjugacionHeader.textContent = conjugacion
-      conjugaciones.appendChild(ConjugacionHeader);
       if (!Object.hasOwn(type_data, conjugacion)) {
           const errorContainer = document.getElementById('error-display');
           errorContainer.innerText = ''; // Clear any previous errors
@@ -99,13 +102,15 @@ function conjugateGroup(conjugation_type, type_data, required_conjugations) {
           }
           return
       }
-      const Table = createTable(type_data[conjugacion]);
+      const Table = createTable(type_data[conjugacion], conjugacion);
       conjugaciones.appendChild(Table);
   }
 }
 
 
 async function conjugarVerbo(){
+  const conjugaciones = document.getElementById("conjugaciones");
+  if (!conjugaciones) return;
   let verbos_data = await loadJSON("verbos");
 
   const params = new URLSearchParams(window.location.search);
@@ -129,8 +134,8 @@ async function conjugarVerbo(){
   const config = await loadJSON("verbos_config");
   const typo_config = config.typo;
 
-  const conjugaciones = document.getElementById("conjugaciones");
   const verboHeader = document.createElement("h1");
+  verboHeader.classList.add("verb-title");
   verboHeader.textContent = verbo;
   conjugaciones.appendChild(verboHeader)
 

@@ -1,33 +1,252 @@
-/* Navigation bar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+}
+
+/* NAVBAR */
+
 nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+
+    padding: 14px 24px;
+
+    background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 
-/* table formatting */
+/* "Verbos" home link */
+nav > a {
+    text-decoration: none;
+    color: #222;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    transition: background-color 0.15s ease;
+}
+
+nav > a:hover {
+    background-color: #eee;
+}
+
+nav > a:focus {
+    outline: 2px solid #777;
+    outline-offset: 2px;
+}
+
+/* Search form */
+nav form {
+    display: flex;
+    gap: 8px;
+}
+
+nav input {
+    padding: 8px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+nav input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+nav button {
+    padding: 8px 14px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #222;
+    color: white;
+
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #444;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    nav > a {
+        text-align: center;
+    }
+
+    nav form {
+        width: 100%;
+    }
+
+    nav input {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+
+/* MAIN PAGE */
+
+body > h1,
+#verbos,
+#conjugaciones,
+#error-display {
+    width: min(1100px, 92%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > h1 {
+    margin-top: 40px;
+}
+
+
+/* INDEX PAGE - VERB LIST */
+
+.verb-list {
+    margin-top: 30px;
+}
+
+.verb-list h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+.verb-link {
+    display: inline-block;
+
+    margin: 4px 6px 4px 0;
+    padding: 7px 12px;
+
+    text-decoration: none;
+    color: #222;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.verb-link:hover {
+    background-color: #eee;
+}
+
+
+/* CONJUGATION PAGE */
+
+#conjugaciones {
+    margin-top: 20px;
+}
+
+.verb-title {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.group-title {
+    margin-top: 16px;
+    margin-bottom: 10px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+
+/* TABLE LAYOUT */
+
+#conjugaciones {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 22px;
+}
+
+/* Make headers span the entire row */
+#conjugaciones > h1,
+#conjugaciones > h2,
+#error-display {
+    grid-column: 1 / -1;
+}
+
+
+/* TABLES */
+
 .conjugation-table {
-    border-collapse: collapse;
     width: 100%;
-    max-width: 500px;
-    margin: 20px 0;
-    font-size: 16px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background-color: white;
+
     border: 1px solid #ddd;
     border-radius: 8px;
+
     overflow: hidden;
+}
+
+.conjugation-table caption {
+    text-align: left;
+
+    font-weight: bold;
+    font-size: 17px;
+
+    padding: 12px 14px;
+
+    background-color: #f0f0f0;
+
+    border: 1px solid #ddd;
+    border-bottom: none;
+
+    border-radius: 8px 8px 0 0;
+
+    text-transform: capitalize;
 }
 
 .conjugation-table th,
 .conjugation-table td {
-    padding: 12px 16px;
+    padding: 11px 14px;
+
     text-align: left;
+
     border-bottom: 1px solid #eee;
 }
 
 .conjugation-table th {
-    width: 40%;
+    width: 45%;
+
     font-weight: 600;
-    background-color: #f7f7f7;
+
+    background-color: #fafafa;
 }
 
 .conjugation-table tr:last-child th,
@@ -35,9 +254,54 @@ nav {
     border-bottom: none;
 }
 
-.conjugation-table tr:hover td,
-.conjugation-table tr:hover th {
-    background-color: #fafafa;
+.conjugation-table tr:hover th,
+.conjugation-table tr:hover td {
+    background-color: #f5f5f5;
 }
 
 
+/* ERROR */
+
+#error-display {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    color: #b00020;
+
+    font-weight: bold;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    nav > a {
+        text-align: center;
+    }
+
+    nav form {
+        width: 100%;
+    }
+
+    nav input {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #conjugaciones {
+        grid-template-columns: 1fr;
+    }
+
+    .verb-title {
+        font-size: 30px;
+    }
+}
