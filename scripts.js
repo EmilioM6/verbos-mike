@@ -29,9 +29,12 @@ async function createVerbos(){
 
             newA.href = "conjugaciones.html";
             newA.textContent = verbo;
-            newA.style.display = "block";
+            newA.style.display = "inline-block";
+
+            const lineBreak = document.createElement("br");
 
             newDiv.appendChild(newA);
+            newDiv.appendChild(lineBreak);
         }
     }
     verbos.appendChild(newDiv);
