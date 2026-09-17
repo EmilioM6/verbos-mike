@@ -24,10 +24,9 @@ async function createVerbos(){
 
         // each verb selected for the ending
         for (const verbo of endings[ending]) {
-            console.log(verbo);
             const newA = document.createElement("a");
 
-            newA.href = "conjugaciones.html";
+            newA.href = `conjugaciones.html?verbo=${verbo}`;
             newA.textContent = verbo;
             newA.style.display = "inline-block";
 

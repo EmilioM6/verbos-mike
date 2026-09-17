@@ -1,17 +1,18 @@
 {
     "terminaciones": {
-        "ar": ["caminar", "hablar"],
-        "er": ["ser", "ver"],
+        "ar": ["caminar", "hablar", "cantar"],
+        "er": ["ser", "ver", "comer"],
         "ir": ["abrir", "salir"]
     },
     "typo": {
+        "formas_no_personales": [],
         "indicativo": {
-            "presente": [],
-            "pasado": [],
-            "futuro": []
+            "presente": ["presente", "presente_progresivo"],
+            "pasado": ["pretérito_perfecto_simple","pretérito_perfecto_compuesto","pretérito_imperfecto"],
+            "futuro": ["futuro_simple"]
         },
-        "condicional": [],
-        "subjuntivo": [],
-        "imperativo": []
+        "condicional": ["simple"],
+        "subjuntivo": ["presente","pretérito_imperfecto_ra"],
+        "imperativo": ["afirmativo", "negativo"]
     }
 }
