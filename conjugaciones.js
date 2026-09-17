@@ -21,6 +21,7 @@ async function loadJSON(nombre_json) {
 
 function createTable(verbo_data) {
     const newTable = document.createElement("table");
+    newTable.classList.add("conjugation-table");
     for (const tuple of pronombres) {
         const key = tuple[0];
         const pronombre = tuple[1];
@@ -30,7 +31,7 @@ function createTable(verbo_data) {
         const newPronombre = document.createElement("th");
         newPronombre.textContent = pronombre
 
-        const newConjugacion = document.createElement("th");
+        const newConjugacion = document.createElement("td");
         newConjugacion.textContent = verbo_data[key];
 
         // add to table
