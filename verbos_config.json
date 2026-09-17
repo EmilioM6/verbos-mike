@@ -1,11 +1,17 @@
 {
-    "ar": {
-        "verbos":["caminar"]
+    "terminaciones": {
+        "ar": ["caminar", "hablar"],
+        "er": ["ser", "ver"],
+        "ir": ["abrir", "salir"]
     },
-    "er": {
-        "verbos":["ser"]
-    },
-    "ir": {
-        "verbos":["abrir"]
+    "typo": {
+        "indicativo": {
+            "presente": [],
+            "pasado": [],
+            "futuro": []
+        },
+        "condicional": [],
+        "subjuntivo": [],
+        "imperativo": []
     }
 }
