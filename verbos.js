@@ -175,3 +175,15 @@ function handleSearch(event) {
             `./conjugaciones.html?verbo=${encodeURIComponent(searchValue)}`;
     }
 }
+/*
+1
+2 Presente Progresivo
+3 Pretérito
+4 Pretérito Perfecto
+5 Imperfecto
+6 Futuro
+7 Condicional
+8 Presente
+9 Pasado
+10 Positivo
+*/
