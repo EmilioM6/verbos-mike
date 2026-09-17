@@ -50,12 +50,32 @@ const pronombres = [
   ["3p", "Ellos/Ellas"]
 ]
 
+const nombresConjugaciones = {
+  // Indicativo
+  "presente": "Presente",
+  "presente_progresivo": "Presente Progresivo",
+  "pretérito_perfecto_simple": "Pretérito",
+  "pretérito_perfecto_compuesto": "Pretérito Perfecto",
+  "pretérito_imperfecto": "Imperfecto",
+  "futuro_simple": "Futuro",
+
+  // Condicional
+  "simple": "Condicional",
+
+  // Subjuntivo
+  "pretérito_imperfecto_ra": "Pasado",
+
+  // Imperativo
+  "afirmativo": "Positivo",
+  "negativo": "Negativo"
+};
+
 function createTable(verbo_data, titulo) {
   const newTable = document.createElement("table");
   newTable.classList.add("conjugation-table");
   
   const caption = document.createElement("caption");
-  caption.textContent = titulo;
+  caption.textContent = nombresConjugaciones[titulo] ?? titulo;
   newTable.appendChild(caption);
 
   for (const tuple of pronombres) {
