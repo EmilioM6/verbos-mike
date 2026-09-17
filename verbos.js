@@ -96,7 +96,7 @@ function conjugateGroup(conjugation_type, type_data, required_conjugations) {
           const errorContainer = document.getElementById('error-display');
           errorContainer.innerText = ''; // Clear any previous errors
           try {
-              throw new Error("conjugation does not exist in database"); // internal check
+              throw new Error("conjugation does not exist"); // internal check
           } catch (error) {
               errorContainer.innerText = `Error: ${error.message}`;
           }
@@ -121,7 +121,7 @@ async function conjugarVerbo(){
       const errorContainer = document.getElementById('error-display');
       errorContainer.innerText = ''; // Clear any previous errors
       try {
-          throw new Error("verb does not exist in database");
+          throw new Error("Choose another verb or try infinitive form");
       } catch (error) {
           errorContainer.innerText = `Error: ${error.message}`;
       }
@@ -157,14 +157,21 @@ createVerbos();
 
 const searchForm = document.getElementById("search-form");
 
-searchForm.addEventListener("submit", handleSearch);
+if (searchForm) {
+    searchForm.addEventListener("submit", handleSearch);
+}
 
 function handleSearch(event) {
     event.preventDefault();
 
-    const searchValue = document.getElementById("mySearch").value.trim();
+    const searchInput = document.getElementById("mySearch");
+
+    if (!searchInput) return;
+
+    const searchValue = searchInput.value.trim().toLowerCase();
 
     if (searchValue) {
-        window.location.href = `conjugaciones.html?verbo=${encodeURIComponent(searchValue)}`;
+        window.location.href =
+            `./conjugaciones.html?verbo=${encodeURIComponent(searchValue)}`;
     }
 }
