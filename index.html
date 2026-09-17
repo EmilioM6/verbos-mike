@@ -7,6 +7,10 @@
     <body>
         <nav>
             <a href="index.html">Verbos</a>
+            <form onsubmit="handleSearch(event)">
+                <input type="search" id="mySearch" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
         </nav>
 
         <h1>
@@ -15,5 +19,6 @@
 
         <div id="verbos"></div>
         <script src="verbos.js"></script>
+        <script src="search.js"></script>
     </body>
 </html>
