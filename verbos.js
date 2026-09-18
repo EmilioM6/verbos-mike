@@ -171,11 +171,12 @@ async function conjugarVerbo(){
   verbos_data = verbos_data[verbo];
 
   const config = await loadJSON("verbos_config");
+  const traducciones = await loadJSON("traducciones");
   const typo_config = config.typo;
 
   const verboHeader = document.createElement("h1");
   verboHeader.classList.add("verb-title");
-  verboHeader.textContent = verbo;
+  verboHeader.textContent = `${verbo} (${traducciones[verbo]})`;
   conjugaciones.appendChild(verboHeader)
 
   // Visual order is important below. loop not possible and this 

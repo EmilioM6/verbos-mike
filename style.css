@@ -152,6 +152,7 @@ body > h2 {
     display: flex;
     flex-direction: column;
 
+    margin: 6px 30px 6px 0;
     padding: 11px 14px;
 
     text-align: center;
