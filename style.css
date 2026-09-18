@@ -25,24 +25,25 @@ nav {
 /* "Verbos" home link */
 nav > a {
     text-decoration: none;
-    color: #222;
+    color: black;
+    background-color: rgb(250, 140, 6);
 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 9px 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(220, 120, 0);
 
-    transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease, transform 0.15s ease;
 }
 
 nav > a:hover {
-    background-color: #eee;
+    background-color: rgb(230, 125, 0);
 }
 
-nav > a:focus {
-    outline: 2px solid #777;
-    outline-offset: 2px;
+nav > a:active {
+    transform: translateY(0);
 }
 
 /* Search form */

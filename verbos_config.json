@@ -1,8 +1,8 @@
 {
     "terminaciones": {
-        "ar": ["caminar", "hablar", "cantar", "bailar", "comprar"],
-        "er": ["correr", "beber", "comer", "aprender", "vender"],
-        "ir": ["abrir", "descubrir", "escribir", "decidir", "subir"]
+        "ar": ["bailar", "caminar", "cantar", "comprar", "hablar"],
+        "er": ["aprender", "beber", "comer", "correr", "vender"],
+        "ir": ["abrir", "decidir", "descubrir", "escribir", "subir"]
     },
     "typo": {
         "formas_no_personales": [],
