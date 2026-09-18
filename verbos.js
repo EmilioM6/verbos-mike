@@ -9,35 +9,54 @@ async function loadJSON(nombre_json) {
 }
 
 // index.html
-async function createVerbos(){
-    const config = await loadJSON("verbos_config");
-    
-    const verbos = document.getElementById("verbos");
-    if (!verbos) return;
+async function createVerbos() {
+  const config = await loadJSON("verbos_config");
+  const traducciones = await loadJSON("traducciones");
 
-    // handle each ending
-    const endings = config.terminaciones;
-    const newDiv = document.createElement("div");
-    newDiv.classList.add("verb-list");
+  const verbos = document.getElementById("verbos");
+  if (!verbos) return;
 
-    for (const ending in endings) {
-        const newHeader = document.createElement("h2");
-        newHeader.textContent = `Verbos con "${ending}"`;
-        newDiv.appendChild(newHeader);
+  const endings = config.terminaciones;
+  const newDiv = document.createElement("div");
+  newDiv.classList.add("verb-list");
 
-        // each verb selected for the ending
-        for (const verbo of endings[ending]) {
-            const newA = document.createElement("a");
-            newA.classList.add("verb-link");
+  for (const ending in endings) {
+      const group = document.createElement("section");
+      group.classList.add("verb-group");
 
-            newA.href = `conjugaciones.html?verbo=${verbo}`;
-            newA.textContent = verbo;
-            newA.style.display = "inline-block";
+      const newHeader = document.createElement("h2");
+      newHeader.textContent = `Verbos con "${ending}"`;
+      group.appendChild(newHeader);
 
-            newDiv.appendChild(newA);
-        }
-    }
-    verbos.appendChild(newDiv);
+      const linksContainer = document.createElement("div");
+      linksContainer.classList.add("verb-grid");
+
+      for (const verbo of endings[ending]) {
+          const newA = document.createElement("a");
+
+          newA.classList.add("verb-link");
+          newA.href =
+              `conjugaciones.html?verbo=${encodeURIComponent(verbo)}`;
+
+          const verboName = document.createElement("span");
+          verboName.classList.add("verb-name");
+          verboName.textContent = verbo;
+
+          const translation = document.createElement("span");
+          translation.classList.add("verb-translation");
+          translation.textContent = traducciones[verbo] ?? "";
+
+          newA.appendChild(verboName);
+          newA.appendChild(translation);
+
+          linksContainer.appendChild(newA);
+      }
+
+      group.appendChild(linksContainer);
+      newDiv.appendChild(group);
+  }
+
+  verbos.appendChild(newDiv);
 }
 
 // conjugaciones.html
