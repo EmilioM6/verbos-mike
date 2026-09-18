@@ -176,7 +176,9 @@ async function conjugarVerbo(){
 
   const verboHeader = document.createElement("h1");
   verboHeader.classList.add("verb-title");
-  verboHeader.textContent = `${verbo} (${traducciones[verbo]})`;
+
+  const translation = traducciones[verbo] ? ` (${traducciones[verbo]})` : "" ;
+  verboHeader.textContent = `${verbo}${translation}`;
   conjugaciones.appendChild(verboHeader)
 
   // Visual order is important below. loop not possible and this 
