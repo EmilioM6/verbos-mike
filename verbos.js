@@ -92,7 +92,7 @@ const nombresConjugaciones = {
 function createTable(verbo_data, titulo) {
   const newTable = document.createElement("table");
   newTable.classList.add("conjugation-table");
-  
+
   const caption = document.createElement("caption");
   caption.textContent = nombresConjugaciones[titulo] ?? titulo;
   newTable.appendChild(caption);
@@ -101,20 +101,25 @@ function createTable(verbo_data, titulo) {
       const key = tuple[0];
       const pronombre = tuple[1];
 
+      // Skip pronouns that don't exist for this conjugation
+      if (!(key in verbo_data)) {
+          continue;
+      }
+
       const newRow = document.createElement("tr");
 
       const newPronombre = document.createElement("th");
-      newPronombre.textContent = pronombre
+      newPronombre.textContent = pronombre;
 
       const newConjugacion = document.createElement("td");
       newConjugacion.textContent = verbo_data[key];
 
-      // add to table
       newRow.appendChild(newPronombre);
       newRow.appendChild(newConjugacion);
-      newTable.appendChild(newRow)
+      newTable.appendChild(newRow);
   }
-  return newTable
+
+  return newTable;
 }
 
 // presente, pasado, futuro, conditional etc
@@ -150,7 +155,7 @@ function conjugateGroup(conjugation_type, type_data, required_conjugations) {
 async function conjugarVerbo(){
   const conjugaciones = document.getElementById("conjugaciones");
   if (!conjugaciones) return;
-  let verbos_data = await loadJSON("verbos");
+  let verbos_data = await loadJSON("verbos_clean");
 
   const params = new URLSearchParams(window.location.search);
   const verbo = params.get("verbo");
