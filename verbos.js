@@ -155,7 +155,7 @@ function conjugateGroup(conjugation_type, type_data, required_conjugations) {
 async function conjugarVerbo(){
   const conjugaciones = document.getElementById("conjugaciones");
   if (!conjugaciones) return;
-  let verbos_data = await loadJSON("verbos_clean");
+  let verbos_data = await loadJSON("verbos");
 
   const params = new URLSearchParams(window.location.search);
   const verbo = params.get("verbo");
