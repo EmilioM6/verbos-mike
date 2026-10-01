@@ -102,8 +102,8 @@ function createTable(verbo_data, titulo) {
       const pronombre = tuple[1];
 
       // Skip pronouns that don't exist for this conjugation
-      if (!(key in verbo_data)) {
-          continue;
+      if (!(key in verbo_data) || verbo_data[key] === null) {
+        continue;
       }
 
       const newRow = document.createElement("tr");
