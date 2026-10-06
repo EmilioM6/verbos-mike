@@ -14,8 +14,9 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: flex-start;
+    gap: 12px;
+    
     padding: 14px 24px;
 
     background-color: white;
@@ -50,6 +51,7 @@ nav > a:active {
 nav form {
     display: flex;
     gap: 8px;
+    margin-left: auto;
 }
 
 nav input {
@@ -96,6 +98,7 @@ nav button:hover {
 
     nav form {
         width: 100%;
+        margin-left: 0;
     }
 
     nav input {
@@ -108,7 +111,9 @@ nav button:hover {
 /* MAIN PAGE */
 
 body > h1,
+body > h2,
 #verbos,
+#vocabulario,
 #conjugaciones,
 #error-display {
     width: min(1100px, 92%);
@@ -119,15 +124,6 @@ body > h1,
 body > h1 {
     margin-top: 40px;
     color: rgb(250, 140, 6);
-}
-
-body > h2,
-#verbos,
-#conjugaciones,
-#error-display {
-    width: min(1100px, 92%);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 body > h2 {
@@ -346,4 +342,97 @@ body > h2 {
     .verb-title {
         font-size: 30px;
     }
+}
+
+/* vocab instance */
+.lesson {
+    width: min(1100px, 92%);
+    margin: 30px auto 60px;
+}
+
+.lesson .verb-title {
+    margin-bottom: 8px;
+}
+
+.translation {
+    font-size: 20px;
+    color: #666;
+    margin-top: -5px;
+    margin-bottom: 35px;
+}
+
+.lesson-section,
+.vocabulary {
+    margin-bottom: 22px;
+    padding: 18px 20px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.vocabulary {
+    background-color: #fff8ee;
+    border-color: #f0c58f;
+}
+
+.vocabulary .group-title {
+    border-bottom-color: #f0c58f;
+}
+
+.vocabulary-intro {
+    margin: 0 0 16px !important;
+    color: #666;
+    font-size: 15px !important;
+}
+
+.lesson .group-title {
+    margin-top: 0;
+}
+
+.lesson h3 {
+    font-size: 20px;
+    margin: 22px 0 14px;
+}
+
+.lesson h4 {
+    font-size: 18px;
+    margin: 24px 0 12px;
+}
+
+.lesson h4 span,
+.explanation {
+    font-weight: normal;
+    color: #666;
+}
+
+.lesson p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.vocab-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.vocab-item > strong {
+    font-size: 17px;
+    margin-right: 12px;
+}
+
+.vocab-item > span {
+    color: #777;
+}
+
+.vocab-item p {
+    margin: 8px 0 0;
+}
+
+.lesson em {
+    font-style: italic;
 }

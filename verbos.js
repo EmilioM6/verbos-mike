@@ -10,11 +10,11 @@ async function loadJSON(nombre_json) {
 
 // index.html
 async function createVerbos() {
-  const config = await loadJSON("verbos_config");
-  const traducciones = await loadJSON("traducciones");
-
   const verbos = document.getElementById("verbos");
   if (!verbos) return;
+
+  const config = await loadJSON("verbos_config");
+  const traducciones = await loadJSON("traducciones");
 
   const endings = config.terminaciones;
   const newDiv = document.createElement("div");
@@ -57,6 +57,59 @@ async function createVerbos() {
   }
 
   verbos.appendChild(newDiv);
+}
+
+// vocab.html
+async function createVerbosConVocab() {
+  const vocabulario = document.getElementById("vocabulario");
+  if (!vocabulario) return;
+
+  const config = await loadJSON("vocab_config");
+
+  const traducciones = await loadJSON("traducciones");
+
+  const endings = config.terminaciones;
+  const newDiv = document.createElement("div");
+  newDiv.classList.add("verb-list");
+
+  for (const ending in endings) {
+      console.log(ending);
+      const group = document.createElement("section");
+      group.classList.add("verb-group");
+
+      const newHeader = document.createElement("h2");
+      newHeader.textContent = `Verbos con "${ending}"`;
+      group.appendChild(newHeader);
+
+      const linksContainer = document.createElement("div");
+      linksContainer.classList.add("verb-grid");
+
+      for (const verbo of endings[ending]) {
+          const newA = document.createElement("a");
+
+          newA.classList.add("verb-link");
+          newA.href =
+              `vocab.html`;
+
+          const verboName = document.createElement("span");
+          verboName.classList.add("verb-name");
+          verboName.textContent = verbo;
+
+          const translation = document.createElement("span");
+          translation.classList.add("verb-translation");
+          translation.textContent = traducciones[verbo] ?? "";
+
+          newA.appendChild(verboName);
+          newA.appendChild(translation);
+
+          linksContainer.appendChild(newA);
+      }
+
+      group.appendChild(linksContainer);
+      newDiv.appendChild(group);
+  }
+
+  vocabulario.appendChild(newDiv);
 }
 
 // conjugaciones.html
@@ -201,6 +254,7 @@ async function conjugarVerbo(){
 
 conjugarVerbo();
 createVerbos();
+createVerbosConVocab();
 
 const searchForm = document.getElementById("search-form");
 
@@ -222,15 +276,3 @@ function handleSearch(event) {
             `./conjugaciones.html?verbo=${encodeURIComponent(searchValue)}`;
     }
 }
-/*
-1
-2 Presente Progresivo
-3 Pretérito
-4 Pretérito Perfecto
-5 Imperfecto
-6 Futuro
-7 Condicional
-8 Presente
-9 Pasado
-10 Positivo
-*/
