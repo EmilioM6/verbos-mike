@@ -1,4 +1,4 @@
-import { loadJSON, showMessage } from "./shared.js";
+import { loadConfig, loadJSON, showMessage } from "./shared.js";
 
 const pronouns = [
   ["1s", "Yo"],
@@ -74,7 +74,7 @@ export async function initializeConjugationsPage() {
   try {
     const [verbs, config, translations] = await Promise.all([
       loadJSON("verbos"),
-      loadJSON("verbos_config"),
+      loadConfig("verbos_config"),
       loadJSON("traducciones")
     ]);
     const verb = new URLSearchParams(window.location.search).get("verbo")?.trim().toLowerCase();

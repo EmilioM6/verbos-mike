@@ -1,4 +1,4 @@
-import { appendFormattedText, loadJSON, showMessage } from "./shared.js";
+import { appendFormattedText, loadConfig, loadJSON, showMessage } from "./shared.js";
 
 function createRelatedWordsCard(relatedWords) {
   const card = document.createElement("section");
@@ -92,7 +92,7 @@ export async function initializeVocabularyPage() {
   const error = document.getElementById("vocab-error");
   try {
     const [config, translations, vocabularies] = await Promise.all([
-      loadJSON("vocab_config"),
+      loadConfig("vocab_config"),
       loadJSON("traducciones"),
       loadJSON("vocabulario")
     ]);

@@ -1,19 +1,19 @@
-import { initializeSearch } from "./js/shared.js";
+import { initializeSearch } from "./shared.js";
 
 async function initializePage() {
   initializeSearch();
 
   if (document.getElementById("verbos")) {
-    const page = await import("./js/verb-lists.js");
+    const page = await import("./verb-lists.js");
     page.initializeVerbListPage();
   } else if (document.getElementById("vocabulario")) {
-    const page = await import("./js/verb-lists.js");
+    const page = await import("./verb-lists.js");
     page.initializeVocabularyMenu();
   } else if (document.getElementById("conjugaciones")) {
-    const page = await import("./js/conjugations.js");
+    const page = await import("./conjugations.js");
     page.initializeConjugationsPage();
   } else if (document.getElementById("vocab-lesson-content")) {
-    const page = await import("./js/vocabulary.js");
+    const page = await import("./vocabulary.js");
     page.initializeVocabularyPage();
   }
 }

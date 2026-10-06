@@ -1,9 +1,17 @@
-export async function loadJSON(name) {
-  const response = await fetch(`./${name}.json`);
+async function fetchJSON(folder, name) {
+  const response = await fetch(`./${folder}/${name}.json`);
   if (!response.ok) {
-    throw new Error(`Could not load ${name}.json (${response.status}).`);
+    throw new Error(`Could not load ${folder}/${name}.json (${response.status}).`);
   }
   return response.json();
+}
+
+export function loadJSON(name) {
+  return fetchJSON("data", name);
+}
+
+export function loadConfig(name) {
+  return fetchJSON("config", name);
 }
 
 export function showMessage(container, message, className = "error-message") {
@@ -17,7 +25,7 @@ export async function renderVerbList(container, configName, destination) {
 
   try {
     const [config, translations] = await Promise.all([
-      loadJSON(configName),
+      loadConfig(configName),
       loadJSON("traducciones")
     ]);
     const list = document.createElement("div");
