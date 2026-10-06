@@ -27,19 +27,28 @@ nav {
 nav > a {
     text-decoration: none;
     color: black;
-    background-color: rgb(250, 140, 6);
+    background-color: #ffe2bd;
 
     font-size: 20px;
     font-weight: bold;
 
     padding: 9px 16px;
     border-radius: 8px;
-    border: 1px solid rgb(220, 120, 0);
+    border: 1px solid #f3c58e;
 
     transition: background-color 0.15s ease, transform 0.15s ease;
 }
 
 nav > a:hover {
+    background-color: #ffd29e;
+}
+
+nav > a[aria-current] {
+    background-color: rgb(250, 140, 6);
+    border-color: rgb(220, 120, 0);
+}
+
+nav > a[aria-current]:hover {
     background-color: rgb(230, 125, 0);
 }
 
@@ -354,6 +363,26 @@ body > h2 {
     margin-bottom: 8px;
 }
 
+.time-group {
+    margin-bottom: 40px;
+}
+
+.study-topic {
+    margin: 20px 0 14px;
+    font-size: 20px;
+}
+
+.lesson .study-topic {
+    margin: 20px 0 14px;
+}
+
+.tense-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+    align-items: start;
+    gap: 22px;
+}
+
 .translation {
     font-size: 20px;
     color: #666;
@@ -363,7 +392,7 @@ body > h2 {
 
 .lesson-section,
 .vocabulary {
-    margin-bottom: 22px;
+    margin-bottom: 0;
     padding: 18px 20px;
 
     background-color: white;
@@ -376,14 +405,18 @@ body > h2 {
     border-color: #f0c58f;
 }
 
-.vocabulary .group-title {
-    border-bottom-color: #f0c58f;
+.card-title {
+    margin: 0 0 14px;
+    font-size: 19px;
 }
 
-.vocabulary-intro {
-    margin: 0 0 16px !important;
-    color: #666;
-    font-size: 15px !important;
+.lesson .card-title {
+    margin: 0 0 14px;
+}
+
+.vocabulary .card-title {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0c58f;
 }
 
 .lesson .group-title {
@@ -420,17 +453,44 @@ body > h2 {
     margin-bottom: 12px;
 }
 
-.vocab-item > strong {
+.vocab-item > div > strong {
+    display: inline-block;
     font-size: 17px;
     margin-right: 12px;
 }
 
-.vocab-item > span {
+.vocab-item > div > span {
     color: #777;
 }
 
-.vocab-item p {
-    margin: 8px 0 0;
+.vocab-item .vocab-example {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 12px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.vocab-table td {
+    line-height: 1.45;
+}
+
+.vocab-table caption span {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.vocab-example::before {
+    content: "Ejemplo";
+    flex: 0 0 auto;
+    color: #777;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .lesson em {
