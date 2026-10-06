@@ -494,6 +494,12 @@ body > h2 {
     font-weight: bold;
 }
 
+.error-message {
+    margin-top: 20px;
+    color: #b00020;
+    font-weight: bold;
+}
+
 .vocab-example::before {
     content: "Ejemplo";
     flex: 0 0 auto;
