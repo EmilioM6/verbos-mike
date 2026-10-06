@@ -1,0 +1,184 @@
+{
+  "bailar": {
+    "time_groups": [
+      {
+        "time": "Presente",
+        "topic": "Los estilos de baile",
+        "tenses": [
+          {
+            "title": "Presente",
+            "note": "",
+            "examples": [
+              "Yo <em>bailo</em> <strong>ballet</strong>.",
+              "Tú <em>bailas</em> <strong>baile contemporáneo / moderno</strong>.",
+              "Él <em>baila</em> <strong>flamenco</strong>.",
+              "Ella <em>baila</em> <strong>salsa</strong>.",
+              "Nosotros <em>bailamos</em> <strong>baile en línea (line dancing)</strong>.",
+              "Ellos <em>bailan</em> <strong>hip hop</strong>."
+            ]
+          },
+          {
+            "title": "Presente progresivo",
+            "note": "(doing something right now — …ing)",
+            "examples": [
+              "Yo <em>estoy bailando</em> <strong>ballet</strong> (en este momento).",
+              "Tú <em>estás bailando</em> <strong>baile contemporáneo / moderno</strong>.",
+              "Él <em>está bailando</em> <strong>flamenco</strong>.",
+              "Ella <em>está bailando</em> <strong>salsa</strong>.",
+              "Nosotros <em>estamos bailando</em> <strong>baile en línea (line dancing)</strong>.",
+              "Ellos <em>están bailando</em> <strong>hip hop</strong>."
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Pasado",
+        "topic": "Nivel o capacidad de baile",
+        "tenses": [
+          {
+            "title": "Pretérito",
+            "note": "",
+            "examples": [
+              "Yo <em>bailé</em> <strong>muy mal</strong> anoche (last night).",
+              "Tú <em>bailaste</em> <strong>mal</strong> ayer.",
+              "Él <em>bailó</em> <strong>regular</strong> la semana pasada.",
+              "Ella <em>bailó</em> <strong>bien</strong> el fin de semana pasado.",
+              "Nosotros <em>bailamos</em> <strong>muy bien</strong> el mes pasado.",
+              "Ellos <em>bailaron</em> <strong>excelente</strong> el año pasado."
+            ]
+          },
+          {
+            "title": "Pretérito perfecto",
+            "note": "",
+            "examples": [
+              "Yo <em>he bailado</em> <strong>muy mal</strong>.",
+              "Tú <em>has bailado</em> <strong>mal</strong>.",
+              "Él <em>ha bailado</em> <strong>regular</strong>.",
+              "Ella <em>ha bailado</em> <strong>bien</strong>.",
+              "Nosotros <em>hemos bailado</em> <strong>muy bien</strong>.",
+              "Ellos <em>han bailado</em> <strong>excelente</strong>."
+            ]
+          },
+          {
+            "title": "Imperfecto",
+            "note": "(used to…)",
+            "examples": [
+              "Yo <em>bailaba</em> <strong>muy mal</strong> cuando era niña (when I was a child).",
+              "Tú <em>bailabas</em> <strong>mal</strong> cuando eras niña (when you were a child).",
+              "Él <em>bailaba</em> <strong>regular</strong> cuando era joven (when he was young).",
+              "Ella <em>bailaba</em> <strong>bien</strong> cuando era joven (when she was young).",
+              "Nosotros <em>bailábamos</em> <strong>muy bien</strong> cuando éramos jóvenes (when we were young).",
+              "Ellos <em>bailaban</em> <strong>excelente</strong> cuando eran jóvenes (when they were young)."
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Futuro",
+        "topic": "Lugares donde bailamos",
+        "tenses": [
+          {
+            "title": "Futuro",
+            "note": "",
+            "examples": [
+              "Yo <em>bailaré</em> en <strong>la discoteca</strong> mañana.",
+              "Tú <em>bailarás</em> en <strong>el teatro</strong> el próximo fin de semana (next weekend).",
+              "Él <em>bailará</em> en <strong>el show</strong> la próxima semana (next week).",
+              "Nosotros <em>bailaremos</em> en <strong>la fiesta</strong> el próximo mes (next month).",
+              "Ellos <em>bailarán</em> en <strong>la academia de baile</strong> el próximo año (next year)."
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Condicional",
+        "topic": "Situaciones hipotéticas",
+        "tenses": [
+          {
+            "title": "Condicional",
+            "note": "(would / could)",
+            "examples": [
+              "Yo <em>bailaría</em> en <strong>la academia de baile</strong>, pero no puedo.",
+              "Tú <em>bailarías</em> en <strong>el salón de baile (dance hall)</strong>, pero no quieres.",
+              "Ella <em>bailaría</em> en <strong>la discoteca</strong>, pero no quiere.",
+              "Nosotros <em>bailaríamos</em> en <strong>el escenario (stage)</strong>, pero no podemos.",
+              "Ellos <em>bailarían</em> en <strong>el show de Broadway</strong>, pero no pueden."
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Subjuntivo",
+        "topic": "¿Con quién bailamos?",
+        "tenses": [
+          {
+            "title": "Subjuntivo presente",
+            "note": "",
+            "examples": [
+              "Tú esperas que <em>yo baile</em> <strong>contigo (with you)</strong>.",
+              "Yo espero que <em>tú bailes</em> <strong>conmigo (with me)</strong>.",
+              "Tú esperas que <em>él baile</em> <strong>con su esposa (with his wife)</strong>.",
+              "Tú esperas que <em>nosotros bailemos</em> <strong>juntos (together)</strong>.",
+              "Tú esperas que <em>ellos bailen</em> <strong>con sus amigos (with their friends)</strong>."
+            ]
+          },
+          {
+            "title": "Subjuntivo pasado",
+            "note": "",
+            "examples": [
+              "Tú esperaste que <em>yo bailara</em> <strong>contigo (with you)</strong>.",
+              "Yo esperé que <em>tú bailaras</em> <strong>conmigo (with me)</strong>.",
+              "Tú esperaste que <em>él bailara</em> <strong>con su esposa (with his wife)</strong>.",
+              "Tú esperaste que <em>nosotros bailáramos</em> <strong>juntos (together)</strong>.",
+              "Tú esperaste que <em>ellos bailaran</em> <strong>con sus amigos (with their friends)</strong>."
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Imperativo",
+        "topic": "Instrucciones para bailar",
+        "tenses": [
+          {
+            "title": "Positivo",
+            "note": "",
+            "examples": [
+              "¡<em>Baila</em> (tú) en el teatro!",
+              "¡<em>Bailemos</em> (nosotros) juntos! (let's dance together!)",
+              "¡<em>Bailen</em> (ustedes) bien!"
+            ]
+          },
+          {
+            "title": "Negativo",
+            "note": "",
+            "examples": [
+              "¡<em>No bailes</em> (tú) mal!",
+              "¡<em>No bailemos</em> (nosotros) en la discoteca!",
+              "¡<em>No bailen</em> (ustedes) salsa!"
+            ]
+          }
+        ]
+      }
+    ],
+    "related_words": {
+      "title": "Palabras relacionadas (related words)",
+      "words": [
+        {
+          "term": "EL BAILE",
+          "translation": "the dance",
+          "example": "Ana enseña <strong>BAILE</strong>."
+        },
+        {
+          "term": "EL BAILARÍN",
+          "translation": "the male dancer",
+          "example": "Juan es <strong>BAILARÍN</strong> de ballet."
+        },
+        {
+          "term": "LA BAILARINA",
+          "translation": "the female dancer",
+          "example": "María es <strong>BAILARINA</strong> en un show de Broadway."
+        }
+      ]
+    }
+  }
+}
