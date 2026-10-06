@@ -1,4 +1,4 @@
-import { appendFormattedText, loadConfig, loadJSON, showMessage } from "./shared.js";
+import { appendFormattedText, configContainsVerb, createVerbPageLink, loadConfig, loadJSON, showMessage } from "./shared.js";
 
 function createRelatedWordsCard(relatedWords) {
   const card = document.createElement("section");
@@ -88,18 +88,19 @@ export async function initializeVocabularyPage() {
   const content = document.getElementById("vocab-lesson-content");
   if (!content) return;
 
+  const heading = document.getElementById("vocab-page-heading");
   const title = document.getElementById("vocab-title");
   const error = document.getElementById("vocab-error");
   try {
-    const [config, translations, vocabularies] = await Promise.all([
+    const [config, translations, vocabularies, conjugationConfig] = await Promise.all([
       loadConfig("vocab_config"),
       loadJSON("traducciones"),
-      loadJSON("vocabulario")
+      loadJSON("vocabulario"),
+      loadConfig("verbos_config").catch(() => null)
     ]);
     const verb = new URLSearchParams(window.location.search).get("verbo")?.trim().toLowerCase();
-    const availableVerbs = Object.values(config.terminaciones ?? {}).flat();
 
-    if (!verb || !availableVerbs.includes(verb)) {
+    if (!verb || !configContainsVerb(config, verb)) {
       throw new Error("Choose a verb from the vocabulary menu.");
     }
 
@@ -110,6 +111,9 @@ export async function initializeVocabularyPage() {
 
     const translation = translations[verb] ? ` (${translations[verb]})` : "";
     title.textContent = `${verb}${translation}`;
+    if (configContainsVerb(conjugationConfig, verb)) {
+      heading.appendChild(createVerbPageLink("conjugaciones.html", "Go to Conjugations", verb));
+    }
     document.title = `Vocabulario: ${verb}`;
 
     if (lesson.related_words) {

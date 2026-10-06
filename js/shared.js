@@ -20,6 +20,19 @@ export function showMessage(container, message, className = "error-message") {
   container.classList.add(className);
 }
 
+export function createVerbPageLink(destination, label, verb) {
+  const link = document.createElement("a");
+  link.classList.add("verb-page-switch");
+  link.href = `${destination}?verbo=${encodeURIComponent(verb)}`;
+  link.textContent = label;
+  return link;
+}
+
+export function configContainsVerb(config, verb) {
+  return Object.values(config?.terminaciones ?? {})
+    .some((verbs) => Array.isArray(verbs) && verbs.includes(verb));
+}
+
 export async function renderVerbList(container, configName, destination) {
   if (!container) return;
 

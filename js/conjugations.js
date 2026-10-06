@@ -1,4 +1,4 @@
-import { loadConfig, loadJSON, showMessage } from "./shared.js";
+import { configContainsVerb, createVerbPageLink, loadConfig, loadJSON, showMessage } from "./shared.js";
 
 const pronouns = [
   ["1s", "Yo"],
@@ -72,10 +72,11 @@ export async function initializeConjugationsPage() {
 
   const error = document.getElementById("error-display");
   try {
-    const [verbs, config, translations] = await Promise.all([
+    const [verbs, config, translations, vocabularyConfig] = await Promise.all([
       loadJSON("verbos"),
       loadConfig("verbos_config"),
-      loadJSON("traducciones")
+      loadJSON("traducciones"),
+      loadConfig("vocab_config").catch(() => null)
     ]);
     const verb = new URLSearchParams(window.location.search).get("verbo")?.trim().toLowerCase();
 
@@ -91,7 +92,13 @@ export async function initializeConjugationsPage() {
     title.classList.add("verb-title");
     const translation = translations[verb] ? ` (${translations[verb]})` : "";
     title.textContent = `${verb}${translation}`;
-    container.appendChild(title);
+    const titleRow = document.createElement("div");
+    titleRow.classList.add("verb-page-heading");
+    titleRow.appendChild(title);
+    if (configContainsVerb(vocabularyConfig, verb)) {
+      titleRow.appendChild(createVerbPageLink("vocab.html", "Go to Vocabulary", verb));
+    }
+    container.appendChild(titleRow);
     document.title = `Conjugaciones: ${verb}`;
 
     renderConjugationGroup(container, "presente", data.indicativo, typo.indicativo?.presente);

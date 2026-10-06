@@ -213,6 +213,41 @@ body > h2 {
     color: rgb(250, 140, 6);
 }
 
+.verb-page-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.verb-page-heading .verb-title,
+.lesson .verb-page-heading .verb-title {
+    margin: 0;
+}
+
+.lesson .verb-page-heading {
+    margin-bottom: 24px;
+}
+
+.verb-page-switch {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #f3c58e;
+    border-radius: 7px;
+    background-color: #ffe2bd;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.verb-page-switch:hover {
+    background-color: #ffd29e;
+    border-color: #e9b370;
+}
+
 .group-title {
     margin-top: 16px;
     margin-bottom: 10px;
@@ -240,6 +275,7 @@ body > h2 {
 /* Make headers span the entire row */
 #conjugaciones > h1,
 #conjugaciones > h2,
+#conjugaciones > .verb-page-heading,
 #error-display {
     grid-column: 1 / -1;
 }
