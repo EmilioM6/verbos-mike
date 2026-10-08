@@ -505,12 +505,91 @@ body > h2 {
 }
 
 .vocab-item .vocab-example {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
     margin: 12px 0 0;
     padding-top: 10px;
     border-top: 1px solid #eee;
+}
+
+.example-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    min-width: 0;
+}
+
+.example-text {
+    flex: 1 1 180px;
+    min-width: 0;
+}
+
+.example-audio-controls {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 7px;
+}
+
+.audio-play-button,
+.audio-speed-button {
+    min-height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.audio-play-button {
+    width: 40px;
+    padding: 0;
+}
+
+.audio-button-icon {
+    display: block;
+    width: 21px;
+    height: 21px;
+    margin: auto;
+}
+
+.audio-speed-button {
+    min-width: 60px;
+    padding: 0 9px;
+    font-size: 13px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.audio-play-button:hover,
+.audio-speed-button:hover {
+    background-color: #fff8ee;
+    border-color: #f0c58f;
+}
+
+.audio-speed-button[aria-pressed="true"] {
+    background-color: rgb(250, 140, 6);
+    border-color: rgb(220, 120, 0);
+}
+
+.audio-speed-button[aria-pressed="true"]:hover {
+    background-color: rgb(230, 125, 0);
+}
+
+.audio-play-button:focus-visible,
+.audio-speed-button:focus-visible {
+    outline: 2px solid rgb(250, 140, 6);
+    outline-offset: 2px;
+}
+
+.audio-pending {
+    flex: 0 0 auto;
+    padding: 5px 8px;
+    border: 1px dashed #c9c9c9;
+    border-radius: 6px;
+    color: #777;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .vocab-table td {
@@ -538,7 +617,8 @@ body > h2 {
 
 .vocab-example::before {
     content: "Ejemplo";
-    flex: 0 0 auto;
+    display: block;
+    margin-bottom: 6px;
     color: #777;
     font-size: 12px;
     font-weight: 700;

@@ -1,5 +1,129 @@
 import { appendFormattedText, configContainsVerb, createVerbPageLink, loadConfig, loadJSON, showMessage } from "./shared.js";
 
+const recordedSpeechRate = 0.9;
+const slowSpeechRate = 0.5;
+let activeAudio = null;
+
+function createAudioButtonIcon(isPlaying) {
+  const svgNamespace = "http://www.w3.org/2000/svg";
+  const icon = document.createElementNS(svgNamespace, "svg");
+  icon.setAttribute("viewBox", "0 0 24 24");
+  icon.setAttribute("aria-hidden", "true");
+  icon.classList.add("audio-button-icon");
+
+  const shape = document.createElementNS(svgNamespace, "path");
+  shape.setAttribute("fill", "currentColor");
+  shape.setAttribute(
+    "d",
+    isPlaying
+      ? "M6 5h4v14H6zm8 0h4v14h-4z"
+      : "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+  );
+  icon.appendChild(shape);
+
+  return icon;
+}
+
+function createExampleContent(example, className = "example-line") {
+  const line = document.createElement("div");
+  line.classList.add(className);
+
+  const text = document.createElement("span");
+  text.classList.add("example-text");
+  appendFormattedText(text, example?.text ?? example);
+  line.appendChild(text);
+
+  if (typeof example?.audio === "string" && example.audio.trim()) {
+    const controls = document.createElement("div");
+    controls.classList.add("example-audio-controls");
+
+    const player = document.createElement("audio");
+    player.preload = "none";
+    player.src = example.audio;
+    player.hidden = true;
+
+    const playButton = document.createElement("button");
+    playButton.type = "button";
+    playButton.classList.add("audio-play-button");
+
+    const setPlaying = (isPlaying) => {
+      playButton.replaceChildren(createAudioButtonIcon(isPlaying));
+      playButton.setAttribute("aria-label", isPlaying ? "Pause example audio" : "Play example audio");
+      playButton.title = isPlaying ? "Pause audio" : "Play audio";
+    };
+
+    setPlaying(false);
+    playButton.addEventListener("click", async () => {
+      if (!player.paused) {
+        player.pause();
+        return;
+      }
+
+      if (activeAudio && activeAudio !== player) {
+        activeAudio.pause();
+      }
+
+      try {
+        await player.play();
+        activeAudio = player;
+        setPlaying(true);
+      } catch {
+        setPlaying(false);
+        playButton.setAttribute("aria-label", "Play example audio; audio could not be played");
+        playButton.title = "Audio could not be played";
+      }
+    });
+    player.addEventListener("pause", () => {
+      setPlaying(false);
+      if (activeAudio === player) {
+        activeAudio = null;
+      }
+    });
+    player.addEventListener("ended", () => {
+      setPlaying(false);
+      if (activeAudio === player) {
+        activeAudio = null;
+      }
+    });
+
+    const speedButton = document.createElement("button");
+    speedButton.type = "button";
+    speedButton.classList.add("audio-speed-button");
+    speedButton.textContent = "Slow";
+    let isSlow = false;
+
+    const setSpeed = () => {
+      speedButton.setAttribute("aria-pressed", String(isSlow));
+      speedButton.setAttribute(
+        "aria-label",
+        isSlow
+          ? "Slow speech is on, 0.5 times. Switch off to return to 0.9 times."
+          : "Slow speech is off, 0.9 times. Switch on for 0.5 times."
+      );
+      speedButton.title = isSlow ? "Return to 0.9× speech" : "Slow speech to 0.5×";
+      // The current MP3 recordings were synthesized at 0.9×. Adjust their
+      // playback rate proportionally when the user selects 0.5× slow speech.
+      player.playbackRate = isSlow ? slowSpeechRate / recordedSpeechRate : 1;
+    };
+
+    setSpeed();
+    speedButton.addEventListener("click", () => {
+      isSlow = !isSlow;
+      setSpeed();
+    });
+
+    controls.append(player, playButton, speedButton);
+    line.appendChild(controls);
+  } else {
+    const missingAudio = document.createElement("span");
+    missingAudio.classList.add("audio-pending");
+    missingAudio.textContent = "MP3 not added";
+    line.appendChild(missingAudio);
+  }
+
+  return line;
+}
+
 function createRelatedWordsCard(relatedWords) {
   const card = document.createElement("section");
   card.classList.add("vocabulary");
@@ -22,9 +146,9 @@ function createRelatedWordsCard(relatedWords) {
     item.appendChild(term);
 
     if (word.example) {
-      const example = document.createElement("p");
+      const example = document.createElement("div");
       example.classList.add("vocab-example");
-      appendFormattedText(example, word.example);
+      example.appendChild(createExampleContent(word.example));
       item.appendChild(example);
     }
 
@@ -51,7 +175,7 @@ function createVocabTenseTable(tense) {
   for (const sentence of tense.examples ?? []) {
     const row = document.createElement("tr");
     const example = document.createElement("td");
-    appendFormattedText(example, sentence);
+    example.appendChild(createExampleContent(sentence));
     row.appendChild(example);
     body.appendChild(row);
   }

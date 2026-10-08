@@ -9,144 +9,180 @@
             "title": "Presente",
             "note": "",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "bailo"
-                },
-                " ",
-                {
-                  "strong": "ballet"
-                },
-                "."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "bailas"
-                },
-                " ",
-                {
-                  "strong": "baile contemporáneo / moderno"
-                },
-                "."
-              ],
-              [
-                "Él ",
-                {
-                  "em": "baila"
-                },
-                " ",
-                {
-                  "strong": "flamenco"
-                },
-                "."
-              ],
-              [
-                "Ella ",
-                {
-                  "em": "baila"
-                },
-                " ",
-                {
-                  "strong": "salsa"
-                },
-                "."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "bailamos"
-                },
-                " ",
-                {
-                  "strong": "baile en línea (line dancing)"
-                },
-                "."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "bailan"
-                },
-                " ",
-                {
-                  "strong": "hip hop"
-                },
-                "."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "bailo"
+                  },
+                  " ",
+                  {
+                    "strong": "ballet"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "bailas"
+                  },
+                  " ",
+                  {
+                    "strong": "baile contemporáneo / moderno"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "baila"
+                  },
+                  " ",
+                  {
+                    "strong": "flamenco"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "baila"
+                  },
+                  " ",
+                  {
+                    "strong": "salsa"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "bailamos"
+                  },
+                  " ",
+                  {
+                    "strong": "baile en línea (line dancing)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "bailan"
+                  },
+                  " ",
+                  {
+                    "strong": "hip hop"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente/example-06.mp3"
+              }
             ]
           },
           {
             "title": "Presente progresivo",
             "note": "(doing something right now — …ing)",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "estoy bailando"
-                },
-                " ",
-                {
-                  "strong": "ballet"
-                },
-                " (en este momento)."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "estás bailando"
-                },
-                " ",
-                {
-                  "strong": "baile contemporáneo / moderno"
-                },
-                "."
-              ],
-              [
-                "Él ",
-                {
-                  "em": "está bailando"
-                },
-                " ",
-                {
-                  "strong": "flamenco"
-                },
-                "."
-              ],
-              [
-                "Ella ",
-                {
-                  "em": "está bailando"
-                },
-                " ",
-                {
-                  "strong": "salsa"
-                },
-                "."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "estamos bailando"
-                },
-                " ",
-                {
-                  "strong": "baile en línea (line dancing)"
-                },
-                "."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "están bailando"
-                },
-                " ",
-                {
-                  "strong": "hip hop"
-                },
-                "."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "estoy bailando"
+                  },
+                  " ",
+                  {
+                    "strong": "ballet"
+                  },
+                  " (en este momento)."
+                ],
+                "audio": "audio/bailar/presente/presente-progresivo/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "estás bailando"
+                  },
+                  " ",
+                  {
+                    "strong": "baile contemporáneo / moderno"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente-progresivo/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "está bailando"
+                  },
+                  " ",
+                  {
+                    "strong": "flamenco"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente-progresivo/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "está bailando"
+                  },
+                  " ",
+                  {
+                    "strong": "salsa"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente-progresivo/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "estamos bailando"
+                  },
+                  " ",
+                  {
+                    "strong": "baile en línea (line dancing)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente-progresivo/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "están bailando"
+                  },
+                  " ",
+                  {
+                    "strong": "hip hop"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/presente/presente-progresivo/example-06.mp3"
+              }
             ]
           }
         ]
@@ -159,216 +195,270 @@
             "title": "Pretérito",
             "note": "",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "bailé"
-                },
-                " ",
-                {
-                  "strong": "muy mal"
-                },
-                " anoche (last night)."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "bailaste"
-                },
-                " ",
-                {
-                  "strong": "mal"
-                },
-                " ayer."
-              ],
-              [
-                "Él ",
-                {
-                  "em": "bailó"
-                },
-                " ",
-                {
-                  "strong": "regular"
-                },
-                " la semana pasada."
-              ],
-              [
-                "Ella ",
-                {
-                  "em": "bailó"
-                },
-                " ",
-                {
-                  "strong": "bien"
-                },
-                " el fin de semana pasado."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "bailamos"
-                },
-                " ",
-                {
-                  "strong": "muy bien"
-                },
-                " el mes pasado."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "bailaron"
-                },
-                " ",
-                {
-                  "strong": "excelente"
-                },
-                " el año pasado."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "bailé"
+                  },
+                  " ",
+                  {
+                    "strong": "muy mal"
+                  },
+                  " anoche (last night)."
+                ],
+                "audio": "audio/bailar/pasado/preterito/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "bailaste"
+                  },
+                  " ",
+                  {
+                    "strong": "mal"
+                  },
+                  " ayer."
+                ],
+                "audio": "audio/bailar/pasado/preterito/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "bailó"
+                  },
+                  " ",
+                  {
+                    "strong": "regular"
+                  },
+                  " la semana pasada."
+                ],
+                "audio": "audio/bailar/pasado/preterito/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "bailó"
+                  },
+                  " ",
+                  {
+                    "strong": "bien"
+                  },
+                  " el fin de semana pasado."
+                ],
+                "audio": "audio/bailar/pasado/preterito/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "bailamos"
+                  },
+                  " ",
+                  {
+                    "strong": "muy bien"
+                  },
+                  " el mes pasado."
+                ],
+                "audio": "audio/bailar/pasado/preterito/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "bailaron"
+                  },
+                  " ",
+                  {
+                    "strong": "excelente"
+                  },
+                  " el año pasado."
+                ],
+                "audio": "audio/bailar/pasado/preterito/example-06.mp3"
+              }
             ]
           },
           {
             "title": "Pretérito perfecto",
             "note": "",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "he bailado"
-                },
-                " ",
-                {
-                  "strong": "muy mal"
-                },
-                "."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "has bailado"
-                },
-                " ",
-                {
-                  "strong": "mal"
-                },
-                "."
-              ],
-              [
-                "Él ",
-                {
-                  "em": "ha bailado"
-                },
-                " ",
-                {
-                  "strong": "regular"
-                },
-                "."
-              ],
-              [
-                "Ella ",
-                {
-                  "em": "ha bailado"
-                },
-                " ",
-                {
-                  "strong": "bien"
-                },
-                "."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "hemos bailado"
-                },
-                " ",
-                {
-                  "strong": "muy bien"
-                },
-                "."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "han bailado"
-                },
-                " ",
-                {
-                  "strong": "excelente"
-                },
-                "."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "he bailado"
+                  },
+                  " ",
+                  {
+                    "strong": "muy mal"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/pasado/preterito-perfecto/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "has bailado"
+                  },
+                  " ",
+                  {
+                    "strong": "mal"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/pasado/preterito-perfecto/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "ha bailado"
+                  },
+                  " ",
+                  {
+                    "strong": "regular"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/pasado/preterito-perfecto/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "ha bailado"
+                  },
+                  " ",
+                  {
+                    "strong": "bien"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/pasado/preterito-perfecto/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "hemos bailado"
+                  },
+                  " ",
+                  {
+                    "strong": "muy bien"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/pasado/preterito-perfecto/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "han bailado"
+                  },
+                  " ",
+                  {
+                    "strong": "excelente"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/pasado/preterito-perfecto/example-06.mp3"
+              }
             ]
           },
           {
             "title": "Imperfecto",
             "note": "(used to…)",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "bailaba"
-                },
-                " ",
-                {
-                  "strong": "muy mal"
-                },
-                " cuando era niña (when I was a child)."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "bailabas"
-                },
-                " ",
-                {
-                  "strong": "mal"
-                },
-                " cuando eras niña (when you were a child)."
-              ],
-              [
-                "Él ",
-                {
-                  "em": "bailaba"
-                },
-                " ",
-                {
-                  "strong": "regular"
-                },
-                " cuando era joven (when he was young)."
-              ],
-              [
-                "Ella ",
-                {
-                  "em": "bailaba"
-                },
-                " ",
-                {
-                  "strong": "bien"
-                },
-                " cuando era joven (when she was young)."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "bailábamos"
-                },
-                " ",
-                {
-                  "strong": "muy bien"
-                },
-                " cuando éramos jóvenes (when we were young)."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "bailaban"
-                },
-                " ",
-                {
-                  "strong": "excelente"
-                },
-                " cuando eran jóvenes (when they were young)."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "bailaba"
+                  },
+                  " ",
+                  {
+                    "strong": "muy mal"
+                  },
+                  " cuando era niña (when I was a child)."
+                ],
+                "audio": "audio/bailar/pasado/imperfecto/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "bailabas"
+                  },
+                  " ",
+                  {
+                    "strong": "mal"
+                  },
+                  " cuando eras niña (when you were a child)."
+                ],
+                "audio": "audio/bailar/pasado/imperfecto/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "bailaba"
+                  },
+                  " ",
+                  {
+                    "strong": "regular"
+                  },
+                  " cuando era joven (when he was young)."
+                ],
+                "audio": "audio/bailar/pasado/imperfecto/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "bailaba"
+                  },
+                  " ",
+                  {
+                    "strong": "bien"
+                  },
+                  " cuando era joven (when she was young)."
+                ],
+                "audio": "audio/bailar/pasado/imperfecto/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "bailábamos"
+                  },
+                  " ",
+                  {
+                    "strong": "muy bien"
+                  },
+                  " cuando éramos jóvenes (when we were young)."
+                ],
+                "audio": "audio/bailar/pasado/imperfecto/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "bailaban"
+                  },
+                  " ",
+                  {
+                    "strong": "excelente"
+                  },
+                  " cuando eran jóvenes (when they were young)."
+                ],
+                "audio": "audio/bailar/pasado/imperfecto/example-06.mp3"
+              }
             ]
           }
         ]
@@ -381,61 +471,76 @@
             "title": "Futuro",
             "note": "",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "bailaré"
-                },
-                " en ",
-                {
-                  "strong": "la discoteca"
-                },
-                " mañana."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "bailarás"
-                },
-                " en ",
-                {
-                  "strong": "el teatro"
-                },
-                " el próximo fin de semana (next weekend)."
-              ],
-              [
-                "Él ",
-                {
-                  "em": "bailará"
-                },
-                " en ",
-                {
-                  "strong": "el show"
-                },
-                " la próxima semana (next week)."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "bailaremos"
-                },
-                " en ",
-                {
-                  "strong": "la fiesta"
-                },
-                " el próximo mes (next month)."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "bailarán"
-                },
-                " en ",
-                {
-                  "strong": "la academia de baile"
-                },
-                " el próximo año (next year)."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "bailaré"
+                  },
+                  " en ",
+                  {
+                    "strong": "la discoteca"
+                  },
+                  " mañana."
+                ],
+                "audio": "audio/bailar/futuro/futuro/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "bailarás"
+                  },
+                  " en ",
+                  {
+                    "strong": "el teatro"
+                  },
+                  " el próximo fin de semana (next weekend)."
+                ],
+                "audio": "audio/bailar/futuro/futuro/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "bailará"
+                  },
+                  " en ",
+                  {
+                    "strong": "el show"
+                  },
+                  " la próxima semana (next week)."
+                ],
+                "audio": "audio/bailar/futuro/futuro/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "bailaremos"
+                  },
+                  " en ",
+                  {
+                    "strong": "la fiesta"
+                  },
+                  " el próximo mes (next month)."
+                ],
+                "audio": "audio/bailar/futuro/futuro/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "bailarán"
+                  },
+                  " en ",
+                  {
+                    "strong": "la academia de baile"
+                  },
+                  " el próximo año (next year)."
+                ],
+                "audio": "audio/bailar/futuro/futuro/example-05.mp3"
+              }
             ]
           }
         ]
@@ -447,61 +552,76 @@
             "title": "Condicional",
             "note": "(would / could)",
             "examples": [
-              [
-                "Yo ",
-                {
-                  "em": "bailaría"
-                },
-                " en ",
-                {
-                  "strong": "la academia de baile"
-                },
-                ", pero no puedo."
-              ],
-              [
-                "Tú ",
-                {
-                  "em": "bailarías"
-                },
-                " en ",
-                {
-                  "strong": "el salón de baile (dance hall)"
-                },
-                ", pero no quieres."
-              ],
-              [
-                "Ella ",
-                {
-                  "em": "bailaría"
-                },
-                " en ",
-                {
-                  "strong": "la discoteca"
-                },
-                ", pero no quiere."
-              ],
-              [
-                "Nosotros ",
-                {
-                  "em": "bailaríamos"
-                },
-                " en ",
-                {
-                  "strong": "el escenario (stage)"
-                },
-                ", pero no podemos."
-              ],
-              [
-                "Ellos ",
-                {
-                  "em": "bailarían"
-                },
-                " en ",
-                {
-                  "strong": "el show de Broadway"
-                },
-                ", pero no pueden."
-              ]
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "bailaría"
+                  },
+                  " en ",
+                  {
+                    "strong": "la academia de baile"
+                  },
+                  ", pero no puedo."
+                ],
+                "audio": "audio/bailar/condicional/condicional/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "bailarías"
+                  },
+                  " en ",
+                  {
+                    "strong": "el salón de baile (dance hall)"
+                  },
+                  ", pero no quieres."
+                ],
+                "audio": "audio/bailar/condicional/condicional/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "bailaría"
+                  },
+                  " en ",
+                  {
+                    "strong": "la discoteca"
+                  },
+                  ", pero no quiere."
+                ],
+                "audio": "audio/bailar/condicional/condicional/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "bailaríamos"
+                  },
+                  " en ",
+                  {
+                    "strong": "el escenario (stage)"
+                  },
+                  ", pero no podemos."
+                ],
+                "audio": "audio/bailar/condicional/condicional/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "bailarían"
+                  },
+                  " en ",
+                  {
+                    "strong": "el show de Broadway"
+                  },
+                  ", pero no pueden."
+                ],
+                "audio": "audio/bailar/condicional/condicional/example-05.mp3"
+              }
             ]
           }
         ]
@@ -514,122 +634,152 @@
             "title": "Subjuntivo presente",
             "note": "",
             "examples": [
-              [
-                "Tú esperas que ",
-                {
-                  "em": "yo baile"
-                },
-                " ",
-                {
-                  "strong": "contigo (with you)"
-                },
-                "."
-              ],
-              [
-                "Yo espero que ",
-                {
-                  "em": "tú bailes"
-                },
-                " ",
-                {
-                  "strong": "conmigo (with me)"
-                },
-                "."
-              ],
-              [
-                "Tú esperas que ",
-                {
-                  "em": "él baile"
-                },
-                " ",
-                {
-                  "strong": "con su esposa (with his wife)"
-                },
-                "."
-              ],
-              [
-                "Tú esperas que ",
-                {
-                  "em": "nosotros bailemos"
-                },
-                " ",
-                {
-                  "strong": "juntos (together)"
-                },
-                "."
-              ],
-              [
-                "Tú esperas que ",
-                {
-                  "em": "ellos bailen"
-                },
-                " ",
-                {
-                  "strong": "con sus amigos (with their friends)"
-                },
-                "."
-              ]
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "yo baile"
+                  },
+                  " ",
+                  {
+                    "strong": "contigo (with you)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-presente/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Yo espero que ",
+                  {
+                    "em": "tú bailes"
+                  },
+                  " ",
+                  {
+                    "strong": "conmigo (with me)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-presente/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "él baile"
+                  },
+                  " ",
+                  {
+                    "strong": "con su esposa (with his wife)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-presente/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "nosotros bailemos"
+                  },
+                  " ",
+                  {
+                    "strong": "juntos (together)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-presente/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "ellos bailen"
+                  },
+                  " ",
+                  {
+                    "strong": "con sus amigos (with their friends)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-presente/example-05.mp3"
+              }
             ]
           },
           {
             "title": "Subjuntivo pasado",
             "note": "",
             "examples": [
-              [
-                "Tú esperaste que ",
-                {
-                  "em": "yo bailara"
-                },
-                " ",
-                {
-                  "strong": "contigo (with you)"
-                },
-                "."
-              ],
-              [
-                "Yo esperé que ",
-                {
-                  "em": "tú bailaras"
-                },
-                " ",
-                {
-                  "strong": "conmigo (with me)"
-                },
-                "."
-              ],
-              [
-                "Tú esperaste que ",
-                {
-                  "em": "él bailara"
-                },
-                " ",
-                {
-                  "strong": "con su esposa (with his wife)"
-                },
-                "."
-              ],
-              [
-                "Tú esperaste que ",
-                {
-                  "em": "nosotros bailáramos"
-                },
-                " ",
-                {
-                  "strong": "juntos (together)"
-                },
-                "."
-              ],
-              [
-                "Tú esperaste que ",
-                {
-                  "em": "ellos bailaran"
-                },
-                " ",
-                {
-                  "strong": "con sus amigos (with their friends)"
-                },
-                "."
-              ]
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "yo bailara"
+                  },
+                  " ",
+                  {
+                    "strong": "contigo (with you)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-pasado/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Yo esperé que ",
+                  {
+                    "em": "tú bailaras"
+                  },
+                  " ",
+                  {
+                    "strong": "conmigo (with me)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-pasado/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "él bailara"
+                  },
+                  " ",
+                  {
+                    "strong": "con su esposa (with his wife)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-pasado/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "nosotros bailáramos"
+                  },
+                  " ",
+                  {
+                    "strong": "juntos (together)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-pasado/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "ellos bailaran"
+                  },
+                  " ",
+                  {
+                    "strong": "con sus amigos (with their friends)"
+                  },
+                  "."
+                ],
+                "audio": "audio/bailar/subjuntivo/subjuntivo-pasado/example-05.mp3"
+              }
             ]
           }
         ]
@@ -641,54 +791,72 @@
             "title": "Positivo",
             "note": "",
             "examples": [
-              [
-                "¡",
-                {
-                  "em": "Baila"
-                },
-                " (tú) en el teatro!"
-              ],
-              [
-                "¡",
-                {
-                  "em": "Bailemos"
-                },
-                " (nosotros) juntos! (let's dance together!)"
-              ],
-              [
-                "¡",
-                {
-                  "em": "Bailen"
-                },
-                " (ustedes) bien!"
-              ]
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Baila"
+                  },
+                  " (tú) en el teatro!"
+                ],
+                "audio": "audio/bailar/imperativo/positivo/example-01.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Bailemos"
+                  },
+                  " (nosotros) juntos! (let's dance together!)"
+                ],
+                "audio": "audio/bailar/imperativo/positivo/example-02.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Bailen"
+                  },
+                  " (ustedes) bien!"
+                ],
+                "audio": "audio/bailar/imperativo/positivo/example-03.mp3"
+              }
             ]
           },
           {
             "title": "Negativo",
             "note": "",
             "examples": [
-              [
-                "¡",
-                {
-                  "em": "No bailes"
-                },
-                " (tú) mal!"
-              ],
-              [
-                "¡",
-                {
-                  "em": "No bailemos"
-                },
-                " (nosotros) en la discoteca!"
-              ],
-              [
-                "¡",
-                {
-                  "em": "No bailen"
-                },
-                " (ustedes) salsa!"
-              ]
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No bailes"
+                  },
+                  " (tú) mal!"
+                ],
+                "audio": "audio/bailar/imperativo/negativo/example-01.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No bailemos"
+                  },
+                  " (nosotros) en la discoteca!"
+                ],
+                "audio": "audio/bailar/imperativo/negativo/example-02.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No bailen"
+                  },
+                  " (ustedes) salsa!"
+                ],
+                "audio": "audio/bailar/imperativo/negativo/example-03.mp3"
+              }
             ]
           }
         ]
@@ -700,35 +868,44 @@
         {
           "term": "EL BAILE",
           "translation": "the dance",
-          "example": [
-            "Ana enseña ",
-            {
-              "strong": "BAILE"
-            },
-            "."
-          ]
+          "example": {
+            "text": [
+              "Ana enseña ",
+              {
+                "strong": "BAILE"
+              },
+              "."
+            ],
+            "audio": "audio/bailar/related-words/example-01.mp3"
+          }
         },
         {
           "term": "EL BAILARÍN",
           "translation": "the male dancer",
-          "example": [
-            "Juan es ",
-            {
-              "strong": "BAILARÍN"
-            },
-            " de ballet."
-          ]
+          "example": {
+            "text": [
+              "Juan es ",
+              {
+                "strong": "BAILARÍN"
+              },
+              " de ballet."
+            ],
+            "audio": "audio/bailar/related-words/example-02.mp3"
+          }
         },
         {
           "term": "LA BAILARINA",
           "translation": "the female dancer",
-          "example": [
-            "María es ",
-            {
-              "strong": "BAILARINA"
-            },
-            " en un show de Broadway."
-          ]
+          "example": {
+            "text": [
+              "María es ",
+              {
+                "strong": "BAILARINA"
+              },
+              " en un show de Broadway."
+            ],
+            "audio": "audio/bailar/related-words/example-03.mp3"
+          }
         }
       ]
     }
