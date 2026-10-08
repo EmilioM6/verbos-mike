@@ -1,7 +1,5 @@
 import { appendFormattedText, configContainsVerb, createVerbPageLink, loadConfig, loadJSON, showMessage } from "./shared.js";
 
-const recordedSpeechRate = 0.9;
-const slowSpeechRate = 0.5;
 let activeAudio = null;
 
 function createAudioButtonIcon(isPlaying) {
@@ -86,6 +84,9 @@ function createExampleContent(example, className = "example-line") {
       }
     });
 
+    /* Temporarily disabled: restore this block to bring back the slow toggle.
+    const recordedSpeechRate = 0.9;
+    const slowSpeechRate = 0.5;
     const speedButton = document.createElement("button");
     speedButton.type = "button";
     speedButton.classList.add("audio-speed-button");
@@ -101,8 +102,7 @@ function createExampleContent(example, className = "example-line") {
           : "Slow speech is off, 0.9 times. Switch on for 0.5 times."
       );
       speedButton.title = isSlow ? "Return to 0.9× speech" : "Slow speech to 0.5×";
-      // The current MP3 recordings were synthesized at 0.9×. Adjust their
-      // playback rate proportionally when the user selects 0.5× slow speech.
+      // Adjust playback proportionally because the current recordings are at 0.9×.
       player.playbackRate = isSlow ? slowSpeechRate / recordedSpeechRate : 1;
     };
 
@@ -111,8 +111,10 @@ function createExampleContent(example, className = "example-line") {
       isSlow = !isSlow;
       setSpeed();
     });
-
     controls.append(player, playButton, speedButton);
+    */
+
+    controls.append(player, playButton);
     line.appendChild(controls);
   } else {
     const missingAudio = document.createElement("span");

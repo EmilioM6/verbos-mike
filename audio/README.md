@@ -7,10 +7,9 @@ project-relative file path. For example,
 
 The current clips use the macOS Paulina Mexican Spanish voice at 158 words per
 minute (about 0.9× the default speech rate). Parenthetical English glosses and
-grammar notes are omitted from the spoken sentence. The vocabulary page plays
-each clip at this rate by default; selecting the orange “Slow” button changes
-playback to 0.5×.
+grammar notes are omitted from the spoken sentence. The vocabulary page
+currently shows a play button for each recorded example.
 
 Examples with `"audio": null` have no recording yet. The vocabulary page shows
-an `MP3 not added` label for those entries and a speaker button with a speed
-toggle once a path is provided.
+an `MP3 not added` label for those entries and a play button once a path is
+provided.
