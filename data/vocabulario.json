@@ -909,5 +909,841 @@
         }
       ]
     }
+  },
+  "caminar": {
+    "time_groups": [
+      {
+        "time": "Presente",
+        "topic": "¿Dónde caminamos?",
+        "tenses": [
+          {
+            "title": "Presente",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "camino"
+                  },
+                  " en ",
+                  {
+                    "strong": "la acera (sidewalk)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "caminas"
+                  },
+                  " en ",
+                  {
+                    "strong": "la montaña"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "camina"
+                  },
+                  " en ",
+                  {
+                    "strong": "el bosque (forest)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "camina"
+                  },
+                  " en ",
+                  {
+                    "strong": "la playa (beach)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "caminamos"
+                  },
+                  " en ",
+                  {
+                    "strong": "el parque"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "caminan"
+                  },
+                  " en ",
+                  {
+                    "strong": "la ciudad"
+                  },
+                  "."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Presente progresivo",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "estoy caminando"
+                  },
+                  " en ",
+                  {
+                    "strong": "la acera (sidewalk)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "estás caminando"
+                  },
+                  " en ",
+                  {
+                    "strong": "la máquina de correr (treadmill)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "está caminando"
+                  },
+                  " en ",
+                  {
+                    "strong": "el bosque (forest)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "está caminando"
+                  },
+                  " en ",
+                  {
+                    "strong": "el campo de golf"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "estamos caminando"
+                  },
+                  " en ",
+                  {
+                    "strong": "la playa (beach)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "están caminando"
+                  },
+                  " en ",
+                  {
+                    "strong": "la montaña"
+                  },
+                  "."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Pasado",
+        "topic": "Velocidad (speed) de caminata",
+        "tenses": [
+          {
+            "title": "Pretérito",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "caminé"
+                  },
+                  " ",
+                  {
+                    "strong": "muy lentamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "caminaste"
+                  },
+                  " ",
+                  {
+                    "strong": "lentamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "caminó"
+                  },
+                  " ",
+                  {
+                    "strong": "normalmente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "caminamos"
+                  },
+                  " ",
+                  {
+                    "strong": "rápidamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "caminaron"
+                  },
+                  " ",
+                  {
+                    "strong": "muy rápidamente"
+                  },
+                  "."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Pretérito perfecto",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "he caminado"
+                  },
+                  " ",
+                  {
+                    "strong": "muy lentamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "has caminado"
+                  },
+                  " ",
+                  {
+                    "strong": "lentamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "ha caminado"
+                  },
+                  " ",
+                  {
+                    "strong": "normalmente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "hemos caminado"
+                  },
+                  " ",
+                  {
+                    "strong": "rápidamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "han caminado"
+                  },
+                  " ",
+                  {
+                    "strong": "muy rápidamente"
+                  },
+                  "."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Imperfecto",
+            "note": "(used to…)",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "caminaba"
+                  },
+                  " ",
+                  {
+                    "strong": "muy lentamente"
+                  },
+                  " cuando me rompí el pie (when I broke my foot)."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "caminabas"
+                  },
+                  " ",
+                  {
+                    "strong": "lentamente"
+                  },
+                  " cuando tuviste dolor de espalda (when you had pain in your back)."
+                ]
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "caminaba"
+                  },
+                  " ",
+                  {
+                    "strong": "normalmente"
+                  },
+                  " antes de su dolor de espalda (before her back pain)."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "caminábamos"
+                  },
+                  " ",
+                  {
+                    "strong": "rápidamente"
+                  },
+                  " para ir a la escuela."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "caminaban"
+                  },
+                  " ",
+                  {
+                    "strong": "muy rápidamente"
+                  },
+                  " para tomar el autobús (to take the bus)."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Futuro",
+        "topic": "¿A qué hora caminamos?",
+        "tenses": [
+          {
+            "title": "Futuro",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "caminaré"
+                  },
+                  " por ",
+                  {
+                    "strong": "las mañanas"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "caminarás"
+                  },
+                  " ",
+                  {
+                    "strong": "al mediodía (noon)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "caminará"
+                  },
+                  " ",
+                  {
+                    "strong": "después del almuerzo"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "caminaremos"
+                  },
+                  " por ",
+                  {
+                    "strong": "la tarde"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "caminarán"
+                  },
+                  " por ",
+                  {
+                    "strong": "la noche"
+                  },
+                  "."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Condicional",
+        "tenses": [
+          {
+            "title": "Condicional",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "caminaría"
+                  },
+                  " ",
+                  {
+                    "strong": "al amanecer (dawn)"
+                  },
+                  ", pero me gusta dormir."
+                ]
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "caminarías"
+                  },
+                  " ",
+                  {
+                    "strong": "al atardecer (sunset)"
+                  },
+                  ", pero estás cansado después del trabajo."
+                ]
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "caminaría"
+                  },
+                  " ",
+                  {
+                    "strong": "después del desayuno"
+                  },
+                  ", pero tiene que trabajar."
+                ]
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "caminaríamos"
+                  },
+                  " ",
+                  {
+                    "strong": "antes de la cena"
+                  },
+                  ", pero tenemos que cocinar."
+                ]
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "caminarían"
+                  },
+                  " ",
+                  {
+                    "strong": "antes de dormir"
+                  },
+                  ", pero se acuestan temprano."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Subjuntivo",
+        "tenses": [
+          {
+            "title": "Subjuntivo presente",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "yo camine"
+                  },
+                  " en ",
+                  {
+                    "strong": "el bosque (forest)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Yo espero que ",
+                  {
+                    "em": "tú camines"
+                  },
+                  " ",
+                  {
+                    "strong": "rápidamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "él camine"
+                  },
+                  " en ",
+                  {
+                    "strong": "la playa (beach)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "nosotros caminemos"
+                  },
+                  " ",
+                  {
+                    "strong": "al amanecer (dawn)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "ellos caminen"
+                  },
+                  " ",
+                  {
+                    "strong": "al atardecer (sunset)"
+                  },
+                  "."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Subjuntivo pasado",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "yo caminara"
+                  },
+                  " ",
+                  {
+                    "strong": "lentamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Yo esperé que ",
+                  {
+                    "em": "tú caminaras"
+                  },
+                  " ",
+                  {
+                    "strong": "muy rápidamente"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "él caminara"
+                  },
+                  " en ",
+                  {
+                    "strong": "la acera (sidewalk)"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "nosotros camináramos"
+                  },
+                  " ",
+                  {
+                    "strong": "por la noche"
+                  },
+                  "."
+                ]
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "ellos caminaran"
+                  },
+                  " ",
+                  {
+                    "strong": "en la montaña"
+                  },
+                  "."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Imperativo",
+        "tenses": [
+          {
+            "title": "Positivo",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Camina"
+                  },
+                  " (tú) ",
+                  {
+                    "strong": "rápidamente"
+                  },
+                  "!"
+                ]
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Caminemos"
+                  },
+                  " (nosotros) en ",
+                  {
+                    "strong": "la acera (sidewalk)"
+                  },
+                  "!"
+                ]
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Caminen"
+                  },
+                  " por ",
+                  {
+                    "strong": "la mañana"
+                  },
+                  "!"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Negativo",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No camines"
+                  },
+                  " (tú) ",
+                  {
+                    "strong": "lentamente"
+                  },
+                  "!"
+                ]
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No caminemos"
+                  },
+                  " (nosotros) en ",
+                  {
+                    "strong": "el bosque (forest)"
+                  },
+                  "!"
+                ]
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No caminen"
+                  },
+                  " (ustedes) ",
+                  {
+                    "strong": "muy rápidamente"
+                  },
+                  "!"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "related_words": {
+      "title": "Palabras relacionadas (related words)",
+      "words": [
+        {
+          "term": "EL CAMINO",
+          "translation": "the road / the path",
+          "example": {
+            "text": [
+              "En el bosque (forest) hay muchos ",
+              {
+                "strong": "CAMINOS"
+              },
+              "."
+            ]
+          }
+        },
+        {
+          "term": "LA CAMINATA",
+          "translation": "the walk",
+          "example": {
+            "text": [
+              "Diana y Mike dan una ",
+              {
+                "strong": "CAMINATA"
+              },
+              " por el parque."
+            ]
+          }
+        },
+        {
+          "term": "EL CAMINANTE / LA CAMINANTE",
+          "translation": "the walker",
+          "example": {
+            "text": [
+              "Diana camina mucho. ¡Diana es una excelente ",
+              {
+                "strong": "CAMINANTE"
+              },
+              "!"
+            ]
+          }
+        }
+      ]
+    }
   }
 }
