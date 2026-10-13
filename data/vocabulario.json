@@ -931,7 +931,8 @@
                     "strong": "la acera (sidewalk)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente/example-01.mp3"
               },
               {
                 "text": [
@@ -944,7 +945,8 @@
                     "strong": "la montaña"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente/example-02.mp3"
               },
               {
                 "text": [
@@ -957,7 +959,8 @@
                     "strong": "el bosque (forest)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente/example-03.mp3"
               },
               {
                 "text": [
@@ -970,7 +973,8 @@
                     "strong": "la playa (beach)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente/example-04.mp3"
               },
               {
                 "text": [
@@ -983,7 +987,8 @@
                     "strong": "el parque"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente/example-05.mp3"
               },
               {
                 "text": [
@@ -996,7 +1001,8 @@
                     "strong": "la ciudad"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente/example-06.mp3"
               }
             ]
           },
@@ -1015,7 +1021,8 @@
                     "strong": "la acera (sidewalk)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente-progresivo/example-01.mp3"
               },
               {
                 "text": [
@@ -1028,7 +1035,8 @@
                     "strong": "la máquina de correr (treadmill)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente-progresivo/example-02.mp3"
               },
               {
                 "text": [
@@ -1041,7 +1049,8 @@
                     "strong": "el bosque (forest)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente-progresivo/example-03.mp3"
               },
               {
                 "text": [
@@ -1054,7 +1063,8 @@
                     "strong": "el campo de golf"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente-progresivo/example-04.mp3"
               },
               {
                 "text": [
@@ -1067,7 +1077,8 @@
                     "strong": "la playa (beach)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente-progresivo/example-05.mp3"
               },
               {
                 "text": [
@@ -1080,7 +1091,8 @@
                     "strong": "la montaña"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/presente/presente-progresivo/example-06.mp3"
               }
             ]
           }
@@ -1105,7 +1117,8 @@
                     "strong": "muy lentamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito/example-01.mp3"
               },
               {
                 "text": [
@@ -1118,7 +1131,8 @@
                     "strong": "lentamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito/example-02.mp3"
               },
               {
                 "text": [
@@ -1131,7 +1145,8 @@
                     "strong": "normalmente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito/example-03.mp3"
               },
               {
                 "text": [
@@ -1144,7 +1159,8 @@
                     "strong": "rápidamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito/example-04.mp3"
               },
               {
                 "text": [
@@ -1157,7 +1173,8 @@
                     "strong": "muy rápidamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito/example-05.mp3"
               }
             ]
           },
@@ -1176,7 +1193,8 @@
                     "strong": "muy lentamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito-perfecto/example-01.mp3"
               },
               {
                 "text": [
@@ -1189,7 +1207,8 @@
                     "strong": "lentamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito-perfecto/example-02.mp3"
               },
               {
                 "text": [
@@ -1202,7 +1221,8 @@
                     "strong": "normalmente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito-perfecto/example-03.mp3"
               },
               {
                 "text": [
@@ -1215,7 +1235,8 @@
                     "strong": "rápidamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito-perfecto/example-04.mp3"
               },
               {
                 "text": [
@@ -1228,7 +1249,8 @@
                     "strong": "muy rápidamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/preterito-perfecto/example-05.mp3"
               }
             ]
           },
@@ -1247,7 +1269,8 @@
                     "strong": "muy lentamente"
                   },
                   " cuando me rompí el pie (when I broke my foot)."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/imperfecto/example-01.mp3"
               },
               {
                 "text": [
@@ -1260,7 +1283,8 @@
                     "strong": "lentamente"
                   },
                   " cuando tuviste dolor de espalda (when you had pain in your back)."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/imperfecto/example-02.mp3"
               },
               {
                 "text": [
@@ -1273,7 +1297,8 @@
                     "strong": "normalmente"
                   },
                   " antes de su dolor de espalda (before her back pain)."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/imperfecto/example-03.mp3"
               },
               {
                 "text": [
@@ -1286,7 +1311,8 @@
                     "strong": "rápidamente"
                   },
                   " para ir a la escuela."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/imperfecto/example-04.mp3"
               },
               {
                 "text": [
@@ -1299,7 +1325,8 @@
                     "strong": "muy rápidamente"
                   },
                   " para tomar el autobús (to take the bus)."
-                ]
+                ],
+                "audio": "audio/caminar/pasado/imperfecto/example-05.mp3"
               }
             ]
           }
@@ -1324,7 +1351,8 @@
                     "strong": "las mañanas"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/futuro/futuro/example-01.mp3"
               },
               {
                 "text": [
@@ -1337,7 +1365,8 @@
                     "strong": "al mediodía (noon)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/futuro/futuro/example-02.mp3"
               },
               {
                 "text": [
@@ -1350,7 +1379,8 @@
                     "strong": "después del almuerzo"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/futuro/futuro/example-03.mp3"
               },
               {
                 "text": [
@@ -1363,7 +1393,8 @@
                     "strong": "la tarde"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/futuro/futuro/example-04.mp3"
               },
               {
                 "text": [
@@ -1376,7 +1407,8 @@
                     "strong": "la noche"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/futuro/futuro/example-05.mp3"
               }
             ]
           }
@@ -1400,7 +1432,8 @@
                     "strong": "al amanecer (dawn)"
                   },
                   ", pero me gusta dormir."
-                ]
+                ],
+                "audio": "audio/caminar/condicional/condicional/example-01.mp3"
               },
               {
                 "text": [
@@ -1413,7 +1446,8 @@
                     "strong": "al atardecer (sunset)"
                   },
                   ", pero estás cansado después del trabajo."
-                ]
+                ],
+                "audio": "audio/caminar/condicional/condicional/example-02.mp3"
               },
               {
                 "text": [
@@ -1426,7 +1460,8 @@
                     "strong": "después del desayuno"
                   },
                   ", pero tiene que trabajar."
-                ]
+                ],
+                "audio": "audio/caminar/condicional/condicional/example-03.mp3"
               },
               {
                 "text": [
@@ -1439,7 +1474,8 @@
                     "strong": "antes de la cena"
                   },
                   ", pero tenemos que cocinar."
-                ]
+                ],
+                "audio": "audio/caminar/condicional/condicional/example-04.mp3"
               },
               {
                 "text": [
@@ -1452,7 +1488,8 @@
                     "strong": "antes de dormir"
                   },
                   ", pero se acuestan temprano."
-                ]
+                ],
+                "audio": "audio/caminar/condicional/condicional/example-05.mp3"
               }
             ]
           }
@@ -1476,7 +1513,8 @@
                     "strong": "el bosque (forest)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-presente/example-01.mp3"
               },
               {
                 "text": [
@@ -1489,7 +1527,8 @@
                     "strong": "rápidamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-presente/example-02.mp3"
               },
               {
                 "text": [
@@ -1502,7 +1541,8 @@
                     "strong": "la playa (beach)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-presente/example-03.mp3"
               },
               {
                 "text": [
@@ -1515,7 +1555,8 @@
                     "strong": "al amanecer (dawn)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-presente/example-04.mp3"
               },
               {
                 "text": [
@@ -1528,7 +1569,8 @@
                     "strong": "al atardecer (sunset)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-presente/example-05.mp3"
               }
             ]
           },
@@ -1547,7 +1589,8 @@
                     "strong": "lentamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-pasado/example-01.mp3"
               },
               {
                 "text": [
@@ -1560,7 +1603,8 @@
                     "strong": "muy rápidamente"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-pasado/example-02.mp3"
               },
               {
                 "text": [
@@ -1573,7 +1617,8 @@
                     "strong": "la acera (sidewalk)"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-pasado/example-03.mp3"
               },
               {
                 "text": [
@@ -1586,7 +1631,8 @@
                     "strong": "por la noche"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-pasado/example-04.mp3"
               },
               {
                 "text": [
@@ -1599,7 +1645,8 @@
                     "strong": "en la montaña"
                   },
                   "."
-                ]
+                ],
+                "audio": "audio/caminar/subjuntivo/subjuntivo-pasado/example-05.mp3"
               }
             ]
           }
@@ -1623,7 +1670,8 @@
                     "strong": "rápidamente"
                   },
                   "!"
-                ]
+                ],
+                "audio": "audio/caminar/imperativo/positivo/example-01.mp3"
               },
               {
                 "text": [
@@ -1636,7 +1684,8 @@
                     "strong": "la acera (sidewalk)"
                   },
                   "!"
-                ]
+                ],
+                "audio": "audio/caminar/imperativo/positivo/example-02.mp3"
               },
               {
                 "text": [
@@ -1649,7 +1698,8 @@
                     "strong": "la mañana"
                   },
                   "!"
-                ]
+                ],
+                "audio": "audio/caminar/imperativo/positivo/example-03.mp3"
               }
             ]
           },
@@ -1668,7 +1718,8 @@
                     "strong": "lentamente"
                   },
                   "!"
-                ]
+                ],
+                "audio": "audio/caminar/imperativo/negativo/example-01.mp3"
               },
               {
                 "text": [
@@ -1681,7 +1732,8 @@
                     "strong": "el bosque (forest)"
                   },
                   "!"
-                ]
+                ],
+                "audio": "audio/caminar/imperativo/negativo/example-02.mp3"
               },
               {
                 "text": [
@@ -1694,7 +1746,8 @@
                     "strong": "muy rápidamente"
                   },
                   "!"
-                ]
+                ],
+                "audio": "audio/caminar/imperativo/negativo/example-03.mp3"
               }
             ]
           }
@@ -1714,7 +1767,8 @@
                 "strong": "CAMINOS"
               },
               "."
-            ]
+            ],
+            "audio": "audio/caminar/related-words/example-01.mp3"
           }
         },
         {
@@ -1727,7 +1781,8 @@
                 "strong": "CAMINATA"
               },
               " por el parque."
-            ]
+            ],
+            "audio": "audio/caminar/related-words/example-02.mp3"
           }
         },
         {
@@ -1740,7 +1795,8 @@
                 "strong": "CAMINANTE"
               },
               "!"
-            ]
+            ],
+            "audio": "audio/caminar/related-words/example-03.mp3"
           }
         }
       ]
