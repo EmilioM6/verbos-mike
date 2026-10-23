@@ -486,6 +486,12 @@ body > h2 {
     margin: 8px 0;
 }
 
+.lesson .audio-disclosure {
+    color: #666;
+    font-size: 13px;
+    margin: 0 0 14px;
+}
+
 .vocab-item {
     background-color: white;
     border: 1px solid #ddd;
