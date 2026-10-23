@@ -1801,5 +1801,908 @@
         }
       ]
     }
+  },
+  "cantar": {
+    "time_groups": [
+      {
+        "time": "Presente",
+        "topic": "¿Qué cantamos?",
+        "tenses": [
+          {
+            "title": "Presente",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "canto"
+                  },
+                  " ",
+                  {
+                    "strong": "ópera"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/presente/presente/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "cantas"
+                  },
+                  " ",
+                  {
+                    "strong": "pop"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/presente/presente/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "canta"
+                  },
+                  " ",
+                  {
+                    "strong": "rock"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/presente/presente/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "canta"
+                  },
+                  " ",
+                  {
+                    "strong": "jazz"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/presente/presente/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "cantamos"
+                  },
+                  " ",
+                  {
+                    "strong": "baladas"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/presente/presente/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "cantan"
+                  },
+                  " ",
+                  {
+                    "strong": "corales"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/presente/presente/example-06.mp3"
+              }
+            ]
+          },
+          {
+            "title": "Presente progresivo",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "estoy cantando"
+                  },
+                  " ",
+                  {
+                    "strong": "ópera"
+                  },
+                  " en este momento."
+                ],
+                "audio": "audio/cantar/presente/presente-progresivo/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "estás cantando"
+                  },
+                  " ",
+                  {
+                    "strong": "pop"
+                  },
+                  " en este momento."
+                ],
+                "audio": "audio/cantar/presente/presente-progresivo/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "está cantando"
+                  },
+                  " ",
+                  {
+                    "strong": "rock"
+                  },
+                  " en este momento."
+                ],
+                "audio": "audio/cantar/presente/presente-progresivo/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "está cantando"
+                  },
+                  " ",
+                  {
+                    "strong": "jazz"
+                  },
+                  " en este momento."
+                ],
+                "audio": "audio/cantar/presente/presente-progresivo/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "estamos cantando"
+                  },
+                  " ",
+                  {
+                    "strong": "baladas"
+                  },
+                  " en este momento."
+                ],
+                "audio": "audio/cantar/presente/presente-progresivo/example-05.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "están cantando"
+                  },
+                  " ",
+                  {
+                    "strong": "corales"
+                  },
+                  " en este momento."
+                ],
+                "audio": "audio/cantar/presente/presente-progresivo/example-06.mp3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Pasado",
+        "topic": "¿Dónde cantamos?",
+        "tenses": [
+          {
+            "title": "Pretérito",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "canté"
+                  },
+                  " en ",
+                  {
+                    "strong": "el teatro"
+                  },
+                  " anoche (last night)."
+                ],
+                "audio": "audio/cantar/pasado/preterito/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "cantaste"
+                  },
+                  " en ",
+                  {
+                    "strong": "el musical de Broadway"
+                  },
+                  " ayer."
+                ],
+                "audio": "audio/cantar/pasado/preterito/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "cantó"
+                  },
+                  " en el ",
+                  {
+                    "strong": "concierto"
+                  },
+                  " el fin de semana pasado (last weekend)."
+                ],
+                "audio": "audio/cantar/pasado/preterito/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "cantamos"
+                  },
+                  " ",
+                  {
+                    "strong": "en un show"
+                  },
+                  " la semana pasada."
+                ],
+                "audio": "audio/cantar/pasado/preterito/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "cantaron"
+                  },
+                  " en ",
+                  {
+                    "strong": "un recital"
+                  },
+                  " el año pasado."
+                ],
+                "audio": "audio/cantar/pasado/preterito/example-05.mp3"
+              }
+            ]
+          },
+          {
+            "title": "Pretérito perfecto",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "he cantado"
+                  },
+                  " en ",
+                  {
+                    "strong": "un teatro"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/pasado/preterito-perfecto/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "has cantado"
+                  },
+                  " en ",
+                  {
+                    "strong": "un coro (chorus)"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/pasado/preterito-perfecto/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "ha cantado"
+                  },
+                  " en ",
+                  {
+                    "strong": "el concierto"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/pasado/preterito-perfecto/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "hemos cantado"
+                  },
+                  " en ",
+                  {
+                    "strong": "un show"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/pasado/preterito-perfecto/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "han cantado"
+                  },
+                  " en ",
+                  {
+                    "strong": "un recital"
+                  },
+                  "."
+                ],
+                "audio": "audio/cantar/pasado/preterito-perfecto/example-05.mp3"
+              }
+            ]
+          },
+          {
+            "title": "Imperfecto",
+            "note": "(used to…)",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "cantaba"
+                  },
+                  " en ",
+                  {
+                    "strong": "el coral de la iglesia"
+                  },
+                  " cuando era niña (when I was a child)."
+                ],
+                "audio": "audio/cantar/pasado/imperfecto/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "cantabas"
+                  },
+                  " en ",
+                  {
+                    "strong": "los shows de la escuela"
+                  },
+                  " cuando eras niño (when you were a child)."
+                ],
+                "audio": "audio/cantar/pasado/imperfecto/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "cantaba"
+                  },
+                  " en ",
+                  {
+                    "strong": "los recitales"
+                  },
+                  " cuando era estudiante (when she was a student)."
+                ],
+                "audio": "audio/cantar/pasado/imperfecto/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "cantábamos"
+                  },
+                  " ",
+                  {
+                    "strong": "en un musical de Broadway"
+                  },
+                  " cuando éramos jóvenes (when we were young)."
+                ],
+                "audio": "audio/cantar/pasado/imperfecto/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "cantaban"
+                  },
+                  " en ",
+                  {
+                    "strong": "un teatro"
+                  },
+                  " cuando eran adolescentes (when they were adolescents)."
+                ],
+                "audio": "audio/cantar/pasado/imperfecto/example-05.mp3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Futuro",
+        "topic": "¿Qué tipos de canciones cantamos?",
+        "tenses": [
+          {
+            "title": "Futuro",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "cantaré"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de amor"
+                  },
+                  " esta noche (tonight)."
+                ],
+                "audio": "audio/cantar/futuro/futuro/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "cantarás"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de niños"
+                  },
+                  " mañana."
+                ],
+                "audio": "audio/cantar/futuro/futuro/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Él ",
+                  {
+                    "em": "cantará"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de Navidad"
+                  },
+                  " la próxima Navidad."
+                ],
+                "audio": "audio/cantar/futuro/futuro/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "cantaremos"
+                  },
+                  " ",
+                  {
+                    "strong": "el himno nacional"
+                  },
+                  " la próxima semana."
+                ],
+                "audio": "audio/cantar/futuro/futuro/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "cantarán"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción religiosa"
+                  },
+                  " el próximo mes."
+                ],
+                "audio": "audio/cantar/futuro/futuro/example-05.mp3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Condicional",
+        "tenses": [
+          {
+            "title": "Condicional",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Yo ",
+                  {
+                    "em": "cantaría"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de amor"
+                  },
+                  ", pero no tengo novia."
+                ],
+                "audio": "audio/cantar/condicional/condicional/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Tú ",
+                  {
+                    "em": "cantarías"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de niños"
+                  },
+                  ", pero no conoces ninguna (you don’t know any)."
+                ],
+                "audio": "audio/cantar/condicional/condicional/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Ella ",
+                  {
+                    "em": "cantaría"
+                  },
+                  " una ",
+                  {
+                    "strong": "canción de Navidad"
+                  },
+                  ", pero no celebra la Navidad."
+                ],
+                "audio": "audio/cantar/condicional/condicional/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Nosotros ",
+                  {
+                    "em": "cantaríamos"
+                  },
+                  " ",
+                  {
+                    "strong": "el himno nacional"
+                  },
+                  ", pero no conocemos las palabras."
+                ],
+                "audio": "audio/cantar/condicional/condicional/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Ellos ",
+                  {
+                    "em": "cantarían"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción religiosa"
+                  },
+                  ", pero no son religiosos."
+                ],
+                "audio": "audio/cantar/condicional/condicional/example-05.mp3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Subjuntivo",
+        "tenses": [
+          {
+            "title": "Subjuntivo presente",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "yo cante"
+                  },
+                  " ",
+                  {
+                    "strong": "ópera"
+                  },
+                  " en el futuro."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Yo espero que ",
+                  {
+                    "em": "tú cantes"
+                  },
+                  " ",
+                  {
+                    "strong": "en el musical de Broadway"
+                  },
+                  " el próximo año."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "él cante"
+                  },
+                  " una ",
+                  {
+                    "strong": "canción de niños"
+                  },
+                  " para tus hijos esta noche (tonight)."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "nosotros cantemos"
+                  },
+                  " ",
+                  {
+                    "strong": "en el recital"
+                  },
+                  " de fin de año el próximo mes."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperas que ",
+                  {
+                    "em": "ellos canten"
+                  },
+                  " ",
+                  {
+                    "strong": "en la ópera de Nueva York"
+                  },
+                  " en 2028."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-05.mp3"
+              }
+            ]
+          },
+          {
+            "title": "Subjuntivo pasado",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "yo cantara"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción religiosa"
+                  },
+                  " ayer."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-01.mp3"
+              },
+              {
+                "text": [
+                  "Yo esperé que ",
+                  {
+                    "em": "tú cantaras"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de Navidad"
+                  },
+                  " en la cena de Navidad el año pasado."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-02.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "él cantara"
+                  },
+                  " ",
+                  {
+                    "strong": "una canción de amor"
+                  },
+                  " el mes pasado en San Valentín."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-03.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "nosotros cantáramos"
+                  },
+                  " en ",
+                  {
+                    "strong": "el coro"
+                  },
+                  " el año pasado."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-04.mp3"
+              },
+              {
+                "text": [
+                  "Tú esperaste que ",
+                  {
+                    "em": "ellos cantaran"
+                  },
+                  " ",
+                  {
+                    "strong": "en el concierto de jazz"
+                  },
+                  " el verano pasado (last summer)."
+                ],
+                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-05.mp3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "time": "Imperativo",
+        "tenses": [
+          {
+            "title": "Positivo",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Canta"
+                  },
+                  " (tú) ",
+                  {
+                    "strong": "el himno nacional"
+                  },
+                  "!"
+                ],
+                "audio": "audio/cantar/imperativo/positivo/example-01.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Cantemos"
+                  },
+                  " (nosotros) en ",
+                  {
+                    "strong": "el coro de la iglesia"
+                  },
+                  "!"
+                ],
+                "audio": "audio/cantar/imperativo/positivo/example-02.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "Canten"
+                  },
+                  " ",
+                  {
+                    "strong": "canciones de rock"
+                  },
+                  "!"
+                ],
+                "audio": "audio/cantar/imperativo/positivo/example-03.mp3"
+              }
+            ]
+          },
+          {
+            "title": "Negativo",
+            "note": "",
+            "examples": [
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No cantes"
+                  },
+                  " (tú) ",
+                  {
+                    "strong": "canciones de amor"
+                  },
+                  "! Son tristes."
+                ],
+                "audio": "audio/cantar/imperativo/negativo/example-01.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No cantemos"
+                  },
+                  " (nosotros) ",
+                  {
+                    "strong": "ópera"
+                  },
+                  "! No tenemos talento."
+                ],
+                "audio": "audio/cantar/imperativo/negativo/example-02.mp3"
+              },
+              {
+                "text": [
+                  "¡",
+                  {
+                    "em": "No canten"
+                  },
+                  " (ustedes) ",
+                  {
+                    "strong": "en el coro"
+                  },
+                  "!"
+                ],
+                "audio": "audio/cantar/imperativo/negativo/example-03.mp3"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "related_words": {
+      "title": "Palabras relacionadas (related words)",
+      "words": [
+        {
+          "term": "EL CANTO",
+          "translation": "the singing",
+          "example": {
+            "text": [
+              {
+                "strong": "EL CANTO"
+              },
+              " de las aves es precioso."
+            ],
+            "audio": "audio/cantar/related-words/example-01.mp3"
+          }
+        },
+        {
+          "term": "LA CANCIÓN",
+          "translation": "the song",
+          "example": {
+            "text": [
+              {
+                "strong": "LA CANCIÓN"
+              },
+              " “Let it be” es de los Beatles."
+            ],
+            "audio": "audio/cantar/related-words/example-02.mp3"
+          }
+        },
+        {
+          "term": "EL CANTANTE",
+          "translation": "the male singer",
+          "example": {
+            "text": [
+              "Paul McCartney es un ",
+              {
+                "strong": "CANTANTE"
+              },
+              " muy famoso."
+            ],
+            "audio": "audio/cantar/related-words/example-03.mp3"
+          }
+        },
+        {
+          "term": "LA CANTANTE",
+          "translation": "the female singer",
+          "example": {
+            "text": [
+              {
+                "strong": "LA CANTANTE"
+              },
+              " Madonna es la reina del pop."
+            ],
+            "audio": "audio/cantar/related-words/example-04.mp3"
+          }
+        }
+      ]
+    }
   }
 }
