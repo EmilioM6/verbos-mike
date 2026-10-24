@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import random
 import re
 import sys
 import tempfile
@@ -20,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 VOCABULARY_FILE = ROOT / "data" / "vocabulario.json"
 API_URL = "https://api.openai.com/v1/audio/speech"
 MODEL = "gpt-4o-mini-tts"
-VOICES = ("cedar", "marin")
+VOICE = "cedar"
 SPEECH_INSTRUCTIONS = (
     "You are a Peruvian Spanish pronunciation coach. I will give you a Spanish sentence. "
     "Prepare it for text-to-speech so a Spanish learner can clearly hear and understand every word. "
@@ -84,12 +83,16 @@ def safe_audio_path(raw_path: object) -> tuple[PurePosixPath, Path]:
     return relative, target
 
 
-def load_jobs() -> tuple[list[tuple[PurePosixPath, Path, str]], int, int]:
+def load_jobs(
+    selected_paths: set[PurePosixPath] | None = None,
+    regenerate_all: bool = False,
+) -> tuple[list[tuple[PurePosixPath, Path, str]], int, int]:
     with VOCABULARY_FILE.open(encoding="utf-8") as source:
         vocabulary = json.load(source)
 
     jobs: list[tuple[PurePosixPath, Path, str]] = []
     seen_paths: set[PurePosixPath] = set()
+    linked_paths: set[PurePosixPath] = set()
     existing_count = 0
     unlinked_count = 0
     for example in find_examples(vocabulary):
@@ -101,17 +104,28 @@ def load_jobs() -> tuple[list[tuple[PurePosixPath, Path, str]], int, int]:
         if relative in seen_paths:
             raise ValueError(f"More than one example points to the same audio file: {relative}")
         seen_paths.add(relative)
+        linked_paths.add(relative)
         if target.is_file():
             existing_count += 1
+            if not regenerate_all or (selected_paths is not None and relative not in selected_paths):
+                continue
         elif target.exists():
             raise ValueError(f"Audio output path exists but is not a file: {relative}")
-        else:
-            sentence = spoken_sentence(example["text"])
-            if not sentence:
-                raise ValueError(f"No speakable text for {relative}")
-            if len(sentence) > MAX_INPUT_CHARACTERS:
-                raise ValueError(f"Text exceeds the {MAX_INPUT_CHARACTERS}-character API limit: {relative}")
-            jobs.append((relative, target, sentence))
+        elif selected_paths is not None and relative not in selected_paths:
+            continue
+
+        sentence = spoken_sentence(example["text"])
+        if not sentence:
+            raise ValueError(f"No speakable text for {relative}")
+        if len(sentence) > MAX_INPUT_CHARACTERS:
+            raise ValueError(f"Text exceeds the {MAX_INPUT_CHARACTERS}-character API limit: {relative}")
+        jobs.append((relative, target, sentence))
+
+    if selected_paths is not None:
+        unknown_paths = selected_paths - linked_paths
+        if unknown_paths:
+            formatted = ", ".join(sorted(str(path) for path in unknown_paths))
+            raise ValueError(f"--only path(s) are not linked to vocabulary examples: {formatted}")
 
     return jobs, existing_count, unlinked_count
 
@@ -186,6 +200,23 @@ def add_missing_audio(
     return added, skipped_race
 
 
+def replace_audio(
+    jobs: list[tuple[PurePosixPath, Path, str]], generated_dir: Path
+) -> tuple[int, int]:
+    added = 0
+    replaced = 0
+    for relative, target, _ in jobs:
+        generated = generated_dir.joinpath(*relative.parts)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        existed = target.is_file()
+        os.replace(generated, target)
+        if existed:
+            replaced += 1
+        else:
+            added += 1
+    return added, replaced
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Generate only missing vocabulary MP3s that have an audio path in data/vocabulario.json."
@@ -193,23 +224,48 @@ def main() -> int:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="List the sentences and randomly selected voices without calling the API or changing files.",
+        help="List the missing sentences and Cedar voice assignments without calling the API or changing files.",
+    )
+    parser.add_argument(
+        "--only",
+        action="append",
+        metavar="AUDIO_PATH",
+        help=(
+            "Generate only the missing audio file at this project-relative path. "
+            "Repeat the option to select multiple paths."
+        ),
+    )
+    parser.add_argument(
+        "--regenerate-all",
+        action="store_true",
+        help="Regenerate every linked vocabulary MP3 with Cedar and replace existing files after generation succeeds.",
     )
     args = parser.parse_args()
 
     try:
-        jobs, existing_count, unlinked_count = load_jobs()
-        print(
-            f"Found {existing_count} existing linked MP3s to keep and {len(jobs)} missing linked MP3s. "
-            f"Each missing sentence has a 50% chance of cedar or marin."
-        )
+        selected_paths = None
+        if args.only:
+            selected_paths = {PurePosixPath(raw_path) for raw_path in args.only}
+            for raw_path in args.only:
+                safe_audio_path(raw_path)
+
+        jobs, existing_count, unlinked_count = load_jobs(selected_paths, args.regenerate_all)
+        if args.regenerate_all:
+            print(
+                f"Selected {len(jobs)} linked MP3s for Cedar regeneration; "
+                f"{existing_count} currently exist and will be replaced after generation succeeds."
+            )
+        else:
+            print(
+                f"Found {existing_count} existing linked MP3s to keep and {len(jobs)} missing linked MP3s "
+                f"selected for Cedar generation."
+            )
         if unlinked_count:
             print(f"Skipping {unlinked_count} examples with audio: null; add an audio path to generate them.")
 
         if args.dry_run:
-            voice_choices = [random.SystemRandom().choice(VOICES) for _ in jobs]
-            for index, ((relative, _, sentence), voice) in enumerate(zip(jobs, voice_choices), start=1):
-                print(f"[{index}/{len(jobs)}] {voice}: {relative} — {sentence}")
+            for index, (relative, _, sentence) in enumerate(jobs, start=1):
+                print(f"[{index}/{len(jobs)}] {VOICE}: {relative} — {sentence}")
             print("Dry run only; no API calls were made and no files were changed.")
             return 0
 
@@ -224,27 +280,39 @@ def main() -> int:
                 "export OPENAI_API_KEY=\"your-api-key\" and then rerun this script."
             )
 
-        voice_choices = [random.SystemRandom().choice(VOICES) for _ in jobs]
-
         with tempfile.TemporaryDirectory(prefix=".openai-tts-", dir=ROOT) as temporary_directory:
             temporary_root = Path(temporary_directory)
             generated_dir = temporary_root / "generated"
 
-            for index, ((relative, _, sentence), voice) in enumerate(zip(jobs, voice_choices), start=1):
-                print(f"[{index}/{len(jobs)}] Generating {relative} ({voice})", flush=True)
+            for index, (relative, _, sentence) in enumerate(jobs, start=1):
+                print(f"[{index}/{len(jobs)}] Generating {relative} ({VOICE})", flush=True)
                 staged_file = generated_dir.joinpath(*relative.parts)
                 staged_file.parent.mkdir(parents=True, exist_ok=True)
-                staged_file.write_bytes(request_speech(api_key, sentence, voice))
+                staged_file.write_bytes(request_speech(api_key, sentence, VOICE))
 
-            added, skipped_race = add_missing_audio(jobs, generated_dir)
+            if args.regenerate_all:
+                added, replaced = replace_audio(jobs, generated_dir)
+                skipped_race = 0
+            else:
+                added, skipped_race = add_missing_audio(jobs, generated_dir)
+                replaced = 0
 
-        print(f"Added {added} missing MP3s; existing audio was not replaced.")
+        if args.regenerate_all:
+            print(f"Added {added} MP3s and replaced {replaced} existing MP3s with Cedar audio.")
+        else:
+            print(f"Added {added} missing MP3s; existing audio was not replaced.")
         if skipped_race:
             print(f"Skipped {skipped_race} files created by another process during generation.")
         return 0
     except (OSError, ValueError, RuntimeError, json.JSONDecodeError) as error:
         print(f"Error: {error}", file=sys.stderr)
-        print("Existing MP3 files were left unchanged.", file=sys.stderr)
+        if args.regenerate_all:
+            print(
+                "Audio replacement starts only after generation completes; a filesystem error during publication may leave a partially updated set.",
+                file=sys.stderr,
+            )
+        else:
+            print("Existing MP3 files were left unchanged.", file=sys.stderr)
         return 1
 
 

@@ -1040,7 +1040,7 @@
               },
               {
                 "text": [
-                  "Él ",
+                  "Ella ",
                   {
                     "em": "está caminando"
                   },
@@ -1050,7 +1050,7 @@
                   },
                   " en este momento."
                 ],
-                "audio": "audio/caminar/presente/presente-progresivo/example-03-v2.mp3"
+                "audio": "audio/caminar/presente/presente-progresivo/example-03-v3.mp3"
               },
               {
                 "text": [
@@ -1268,7 +1268,7 @@
                   {
                     "strong": "muy lentamente"
                   },
-                  " cuando era pequeño (when I was small)."
+                  " cuando era pequeño (when I was little)."
                 ],
                 "audio": "audio/caminar/pasado/imperfecto/example-01-v2.mp3"
               },
@@ -2440,9 +2440,9 @@
                   {
                     "strong": "canción de niños"
                   },
-                  " para tus hijos esta noche (tonight)."
+                  " esta noche (tonight)."
                 ],
-                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-03.mp3"
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-03-v2.mp3"
               },
               {
                 "text": [
@@ -2450,13 +2450,13 @@
                   {
                     "em": "nosotros cantemos"
                   },
-                  " ",
+                  " en el ",
                   {
-                    "strong": "en el recital"
+                    "strong": "recital"
                   },
-                  " de fin de año el próximo mes."
+                  " el próximo mes."
                 ],
-                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-04.mp3"
+                "audio": "audio/cantar/subjuntivo/subjuntivo-presente/example-04-v2.mp3"
               },
               {
                 "text": [
@@ -2502,9 +2502,9 @@
                   {
                     "strong": "una canción de Navidad"
                   },
-                  " en la cena de Navidad el año pasado."
+                  " el año pasado."
                 ],
-                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-02.mp3"
+                "audio": "audio/cantar/subjuntivo/subjuntivo-pasado/example-02-v2.mp3"
               },
               {
                 "text": [
