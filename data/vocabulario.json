@@ -1794,8 +1794,16 @@
           }
         },
         {
-          "term": "EL CAMINANTE / LA CAMINANTE",
-          "translation": "the walker",
+          "forms": [
+            {
+              "term": "EL CAMINANTE",
+              "translation": "the male walker"
+            },
+            {
+              "term": "LA CAMINANTE",
+              "translation": "the female walker"
+            }
+          ],
           "example": {
             "text": [
               "Diana camina mucho. ¡Diana es una excelente ",

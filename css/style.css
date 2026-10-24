@@ -500,14 +500,20 @@ body > h2 {
     margin-bottom: 12px;
 }
 
-.vocab-item > div > strong {
+.vocab-item > div > strong,
+.vocab-word-form > strong {
     display: inline-block;
     font-size: 17px;
     margin-right: 12px;
 }
 
-.vocab-item > div > span {
+.vocab-item > div > span,
+.vocab-word-form > span {
     color: #777;
+}
+
+.vocab-word-form + .vocab-word-form {
+    margin-top: 4px;
 }
 
 .vocab-item .vocab-example {

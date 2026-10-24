@@ -139,13 +139,29 @@ function createRelatedWordsCard(relatedWords) {
     const item = document.createElement("div");
     item.classList.add("vocab-item");
 
-    const term = document.createElement("div");
-    const wordName = document.createElement("strong");
-    wordName.textContent = word.term;
-    const translation = document.createElement("span");
-    translation.textContent = word.translation;
-    term.append(wordName, translation);
-    item.appendChild(term);
+    if (Array.isArray(word.forms)) {
+      const forms = document.createElement("div");
+      forms.classList.add("vocab-word-forms");
+      for (const form of word.forms) {
+        const line = document.createElement("div");
+        line.classList.add("vocab-word-form");
+        const wordName = document.createElement("strong");
+        wordName.textContent = form.term;
+        const translation = document.createElement("span");
+        translation.textContent = form.translation;
+        line.append(wordName, translation);
+        forms.appendChild(line);
+      }
+      item.appendChild(forms);
+    } else {
+      const term = document.createElement("div");
+      const wordName = document.createElement("strong");
+      wordName.textContent = word.term;
+      const translation = document.createElement("span");
+      translation.textContent = word.translation;
+      term.append(wordName, translation);
+      item.appendChild(term);
+    }
 
     if (word.example) {
       const example = document.createElement("div");
